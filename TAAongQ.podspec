@@ -14,7 +14,7 @@ s.license      = "MIT"
 s.author             = { "林宁宁" => "763465697@qq.com" }
 s.platform     = :ios, "7.0"
 s.requires_arc = true
-s.source       = { :git => "https://github.com/MaiyaT/AongQ.git", :tag => "0.0.1" }
+s.source       = { :git => "https://github.com/MaiyaT/AongQ.git", :tag => s.version }
 s.source_files  = "TAAongQ/**/*.{h,m}"
 s.exclude_files = "Classes/Exclude"
 s.frameworks = 'Foundation', 'UIKit'
