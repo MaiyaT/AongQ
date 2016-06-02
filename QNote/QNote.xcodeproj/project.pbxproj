@@ -15,6 +15,7 @@
 		7A2BAE5E1D0005AD00D0F967 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2BAE5D1D0005AD00D0F967 /* HomeViewController.m */; };
 		7A2BAE621D000C2700D0F967 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2BAE611D000C2700D0F967 /* HomeTableViewCell.m */; };
 		7A2BAE661D00210E00D0F967 /* SecureCodingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2BAE651D00210E00D0F967 /* SecureCodingViewController.m */; };
+		7AA8CE291D00694000669047 /* SecureObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA8CE281D00694000669047 /* SecureObj.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		7A2BAE611D000C2700D0F967 /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
 		7A2BAE641D00210E00D0F967 /* SecureCodingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecureCodingViewController.h; sourceTree = "<group>"; };
 		7A2BAE651D00210E00D0F967 /* SecureCodingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecureCodingViewController.m; sourceTree = "<group>"; };
+		7AA8CE271D00694000669047 /* SecureObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecureObj.h; sourceTree = "<group>"; };
+		7AA8CE281D00694000669047 /* SecureObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecureObj.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 			children = (
 				7A2BAE641D00210E00D0F967 /* SecureCodingViewController.h */,
 				7A2BAE651D00210E00D0F967 /* SecureCodingViewController.m */,
+				7AA8CE271D00694000669047 /* SecureObj.h */,
+				7AA8CE281D00694000669047 /* SecureObj.m */,
 			);
 			path = SecureCodingVC;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 			files = (
 				7A2BAE451D0004D700D0F967 /* AppDelegate.m in Sources */,
 				7A2BAE421D0004D700D0F967 /* main.m in Sources */,
+				7AA8CE291D00694000669047 /* SecureObj.m in Sources */,
 				7A2BAE621D000C2700D0F967 /* HomeTableViewCell.m in Sources */,
 				7A2BAE661D00210E00D0F967 /* SecureCodingViewController.m in Sources */,
 				7A2BAE5E1D0005AD00D0F967 /* HomeViewController.m in Sources */,
@@ -346,6 +352,7 @@
 				7A2BAE561D0004D700D0F967 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

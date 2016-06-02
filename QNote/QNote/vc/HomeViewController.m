@@ -61,10 +61,17 @@
     NSString * title = dataDic[@"title"];
     NSString * vcClass   = dataDic[@"vc"];
     
-    UIViewController * vc = [[NSClassFromString(vcClass) alloc] init];
-    vc.title = title;
-    [self.navigationController pushViewController:vc animated:YES];
+//    UIViewController * vc = [[NSClassFromString(vcClass) alloc] init];
+//    vc.title = title;
+//    [self.navigationController pushViewController:vc animated:YES];
+
+//    
+//    UIViewController * vc = [[self storyboard] instantiateViewControllerWithIdentifier:vcClass];
+//    
+//    [self.navigationController pushViewController:vc animated:YES];
     
+    
+    [self performSegueWithIdentifier:vcClass sender:self];
 }
 
 /*
