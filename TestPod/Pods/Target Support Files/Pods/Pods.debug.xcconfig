@@ -1,5 +1,0 @@
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/TAAongQ" "${PODS_ROOT}/Headers/Public/pop"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/TAAongQ" -isystem "${PODS_ROOT}/Headers/Public/pop"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"TAAongQ" -l"c++" -l"pop" -framework "Foundation" -framework "UIKit"
-PODS_ROOT = ${SRCROOT}/Pods
