@@ -14,8 +14,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *titleField;
 @property (weak, nonatomic) IBOutlet UITextView *contentTextView;
 
-@property (retain, nonatomic) SecureObj * archiveModel;
-
 @end
 
 @implementation SecureCodingViewController
@@ -41,7 +39,6 @@
     
     [obj2 getPropertyNames];
     
-    self.archiveModel = obj2;
     
 //    NSKeyedUnarchiver
 //    [obj2 ]
@@ -54,18 +51,19 @@
 }
 - (IBAction)btnEventArchive:(id)sender {
     
-    self.archiveModel.secureTitle = self.titleField.text;
-    self.archiveModel.secureContent = self.contentTextView.text;
+    SecureObj * obj = [SecureObj new];
+    obj.secureTitle = self.titleField.text;
+    obj.secureContent = self.contentTextView.text;
     
-    [NSKeyedArchiver archiveRootObject:self.archiveModel toFile:[self pathArchive]];
+    [NSKeyedArchiver archiveRootObject:obj toFile:[self pathArchive]];
     
 }
 - (IBAction)btnEventUnArchive:(id)sender {
     
-    self.archiveModel = [NSKeyedUnarchiver unarchiveObjectWithFile:[self pathArchive]];
+    SecureObj * obj = [NSKeyedUnarchiver unarchiveObjectWithFile:[self pathArchive]];
     
-    self.titleField.text = self.archiveModel.secureTitle;
-    self.contentTextView.text = self.archiveModel.secureContent;
+    self.titleField.text = obj.secureTitle;
+    self.contentTextView.text = obj.secureContent;
     
 }
 - (IBAction)btnEventRightNavcBar:(id)sender {

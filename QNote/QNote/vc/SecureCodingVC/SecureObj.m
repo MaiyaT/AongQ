@@ -29,10 +29,8 @@
 //        self.superObj = [aDecoder decodeObjectOfClass:[SecureObj class] forKey:@"superObj"];
 //        self.secureContent  = [aDecoder decodeObjectOfClass:[NSString class] forKey:@"secureContent"];
         
-        [[self getPropertyClassesByName] enumerateKeysAndObjectsUsingBlock:(void (^)(NSString *key, Class propertyClass, BOOL *stop)) {
-            
-            [aDecoder decodeObjectOfClass:propertyClass forKey:key];
-            
+        [[self getPropertyClassesByName] enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull propertyClass, BOOL * _Nonnull stop) {
+           
             id object = [aDecoder decodeObjectOfClass:propertyClass forKey:key];
             
             if (object)
@@ -42,12 +40,14 @@
             
         }];
         
+        
     }
     return self;
 }
 
 -(void)encodeWithCoder:(NSCoder *)aCoder
 {
+    
 //    [aCoder encodeObject:self.dataList forKey:@"dataList"];
 //    [aCoder encodeObject:self.secureTitle forKey:@"secureTitle"];
 //    [aCoder encodeObject:self.superObj forKey:@"superObj"];
@@ -113,7 +113,7 @@
     dictionary = [NSMutableDictionary dictionary];
     
     Class subClass = [self class];
-    while (subClass != [NSObject class])
+    while (subClass != [NSObject class] && subClass)
     {
         unsigned int propertyCount;
         objc_property_t * properties = class_copyPropertyList([self class], &propertyCount);
@@ -190,8 +190,13 @@
                         case '@': // Object 
                             
                         { 
+                            NSString * classStr = @(typeEncoding);
+                            classStr = [classStr stringByReplacingOccurrencesOfString:@"@" withString:@""];
+                            classStr = [classStr stringByReplacingOccurrencesOfString:@"\"" withString:@""];
+                            classStr = [classStr stringByReplacingOccurrencesOfString:@"\\" withString:@""];
                             
-                            //TODO: get class name 
+                            
+                            propertyClass = NSClassFromString(classStr);
                             
                             break; 
                             
