@@ -24,7 +24,7 @@
     
     self.dataList = [[NSMutableArray alloc] init];
     
-    [self.dataList addObject:@{@"title":@"NSSecureCoding",@"subtitle":@"asd",@"vc":@"SecureCodingViewController"}];
+    [self.dataList addObject:@{@"title":@"NSSecureCoding",@"subtitle":@"asd",@"vc":@"SecureCodingViewController",@"sugueid":@"pushSecure"}];
     
     self.tableV.tableFooterView = [UIView new];
 }
@@ -60,18 +60,32 @@
     
     NSString * title = dataDic[@"title"];
     NSString * vcClass   = dataDic[@"vc"];
+    NSString * sugueid = dataDic[@"sugueid"];
     
-//    UIViewController * vc = [[NSClassFromString(vcClass) alloc] init];
-//    vc.title = title;
-//    [self.navigationController pushViewController:vc animated:YES];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self performSegueWithIdentifier:sugueid sender:self];
+    });
+//    else if ([[self storyboard] instantiateViewControllerWithIdentifier:vcClass])
+//    {
+//        [self.navigationController pushViewController:[[self storyboard] instantiateViewControllerWithIdentifier:vcClass] animated:YES];
+//    }
+//    else
+//    {
+//        UIViewController * vc = [[NSClassFromString(vcClass) alloc] init];
+//        vc.title = title;
+//        [self.navigationController pushViewController:vc animated:YES];
+//    }
+}
 
-//    
-//    UIViewController * vc = [[self storyboard] instantiateViewControllerWithIdentifier:vcClass];
-//    
-//    [self.navigationController pushViewController:vc animated:YES];
+//判断 segue跳不跳
+-(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
+{
+    return YES;
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
     
-    
-    [self performSegueWithIdentifier:vcClass sender:self];
 }
 
 /*

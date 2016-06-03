@@ -28,6 +28,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -42,7 +43,7 @@
                                     <constraint firstAttribute="height" constant="44" id="gEF-Eb-XqI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -62,6 +63,7 @@
                     <size key="freeformSize" width="600" height="600"/>
                     <connections>
                         <outlet property="tableV" destination="lkF-St-kac" id="BeN-6d-2qi"/>
+                        <segue destination="FnB-Dy-55g" kind="push" identifier="pushSecure" id="PNk-6l-pvp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sh4-LZ-KEZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -81,7 +83,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Title" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OEj-c5-W5c">
-                                <rect key="frame" x="30" y="40" width="540" height="30"/>
+                                <rect key="frame" x="30" y="84" width="540" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="7fa-Bl-efc"/>
                                 </constraints>
@@ -109,8 +111,8 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ws4-ch-lW1">
-                                <rect key="frame" x="30" y="100" width="540" height="386"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="30" y="144" width="540" height="342"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -133,6 +135,13 @@
                             <constraint firstItem="w3x-Sv-YwF" firstAttribute="width" secondItem="vXR-96-zbS" secondAttribute="width" id="yHW-SY-5re"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="SecureCoding" id="Y3a-38-2Uy">
+                        <barButtonItem key="rightBarButtonItem" title="键盘" id="a3m-Se-uEb">
+                            <connections>
+                                <action selector="btnEventRightNavcBar:" destination="FnB-Dy-55g" id="3ZI-oe-Maw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="contentTextView" destination="Ws4-ch-lW1" id="rdL-Ac-NKb"/>
                         <outlet property="titleField" destination="OEj-c5-W5c" id="Tic-Ag-FLm"/>
@@ -140,7 +149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZYW-uo-Hdp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1160" y="431"/>
+            <point key="canvasLocation" x="1264" y="609"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="e1c-Fi-uxs">

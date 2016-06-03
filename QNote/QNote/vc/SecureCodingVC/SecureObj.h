@@ -16,6 +16,8 @@
 
 @property (copy, nonatomic) NSString * secureTitle;
 
+@property (copy, nonatomic) NSString * secureContent;
+
 @property (assign, nonatomic) NSInteger secureIndex;
 
 /** 获取属性的名字*/

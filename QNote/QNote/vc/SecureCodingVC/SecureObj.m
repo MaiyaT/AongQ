@@ -23,22 +23,24 @@
 {
     if(self = [super init])
     {
-        self.dataList = [aDecoder decodeObjectOfClass:[NSMutableArray class] forKey:@"dataList"];
-        self.secureTitle = [aDecoder decodeObjectOfClass:[NSString class] forKey:@"secureTitle"];
-        self.secureIndex = [[aDecoder decodeObjectOfClass:[NSNumber class] forKey:@"secureIndex"] integerValue];
-        self.superObj = [aDecoder decodeObjectOfClass:[SecureObj class] forKey:@"superObj"];
+//        self.dataList = [aDecoder decodeObjectOfClass:[NSMutableArray class] forKey:@"dataList"];
+//        self.secureTitle = [aDecoder decodeObjectOfClass:[NSString class] forKey:@"secureTitle"];
+//        self.secureIndex = [[aDecoder decodeObjectOfClass:[NSNumber class] forKey:@"secureIndex"] integerValue];
+//        self.superObj = [aDecoder decodeObjectOfClass:[SecureObj class] forKey:@"superObj"];
+//        self.secureContent  = [aDecoder decodeObjectOfClass:[NSString class] forKey:@"secureContent"];
         
-//        [[self getPropertyClassesByName] enumerateKeysAndObjectsUsingBlock:(void (^)(NSString *key, Class propertyClass, BOOL *stop)) {
-//            
-//            [aDecoder decodeObjectOfClass:propertyClass forKey:key];
-////            NSObject * object = [aDecoder decodeObjectOfClass:propertyClass forKey:key];
-////            
-////            if (object)
-////            {
-////                [self setValue:object forKey:key];
-////            }
-//            
-//        }];
+        [[self getPropertyClassesByName] enumerateKeysAndObjectsUsingBlock:(void (^)(NSString *key, Class propertyClass, BOOL *stop)) {
+            
+            [aDecoder decodeObjectOfClass:propertyClass forKey:key];
+            
+            id object = [aDecoder decodeObjectOfClass:propertyClass forKey:key];
+            
+            if (object)
+            {
+                [self setValue:object forKey:key];
+            }
+            
+        }];
         
     }
     return self;
@@ -46,19 +48,21 @@
 
 -(void)encodeWithCoder:(NSCoder *)aCoder
 {
-    [aCoder encodeObject:self.dataList forKey:@"dataList"];
-    [aCoder encodeObject:self.secureTitle forKey:@"secureTitle"];
-    [aCoder encodeObject:self.superObj forKey:@"superObj"];
-    [aCoder encodeObject:@(self.secureIndex) forKey:@"secureIndex"];
-//    for (NSString *key in [self getPropertyClassesByName])
-//    {
-//        id object = [self valueForKey:key];
-//        
-//        if (object)
-//        {
-//            [aCoder encodeObject:object forKey:key];
-//        }
-//    }
+//    [aCoder encodeObject:self.dataList forKey:@"dataList"];
+//    [aCoder encodeObject:self.secureTitle forKey:@"secureTitle"];
+//    [aCoder encodeObject:self.superObj forKey:@"superObj"];
+//    [aCoder encodeObject:@(self.secureIndex) forKey:@"secureIndex"];
+//    [aCoder encodeObject:self.secureContent forKey:@"secureContent"];
+    
+    for (NSString *key in [self getPropertyClassesByName])
+    {
+        id object = [self valueForKey:key];
+        
+        if (object)
+        {
+            [aCoder encodeObject:object forKey:key];
+        }
+    }
 }
 
 

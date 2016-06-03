@@ -14,6 +14,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *titleField;
 @property (weak, nonatomic) IBOutlet UITextView *contentTextView;
 
+@property (retain, nonatomic) SecureObj * archiveModel;
+
 @end
 
 @implementation SecureCodingViewController
@@ -35,8 +37,11 @@
     obj2.secureIndex = 2;
     obj2.secureTitle = @"tessttt";
     obj2.superObj = obj1;
+    obj2.secureContent = @"sadasdasdasdasdsad";
     
     [obj2 getPropertyNames];
+    
+    self.archiveModel = obj2;
     
 //    NSKeyedUnarchiver
 //    [obj2 ]
@@ -48,8 +53,35 @@
     
 }
 - (IBAction)btnEventArchive:(id)sender {
+    
+    self.archiveModel.secureTitle = self.titleField.text;
+    self.archiveModel.secureContent = self.contentTextView.text;
+    
+    [NSKeyedArchiver archiveRootObject:self.archiveModel toFile:[self pathArchive]];
+    
 }
 - (IBAction)btnEventUnArchive:(id)sender {
+    
+    self.archiveModel = [NSKeyedUnarchiver unarchiveObjectWithFile:[self pathArchive]];
+    
+    self.titleField.text = self.archiveModel.secureTitle;
+    self.contentTextView.text = self.archiveModel.secureContent;
+    
+}
+- (IBAction)btnEventRightNavcBar:(id)sender {
+    
+    [self.view endEditing:YES];
+}
+
+- (NSString *)pathArchive
+{
+    NSString * path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    
+    path = [path stringByAppendingPathComponent:@"archive"];
+    
+    NSLog(@"###### %@",path);
+    
+    return path;
 }
 
 - (void)didReceiveMemoryWarning {
