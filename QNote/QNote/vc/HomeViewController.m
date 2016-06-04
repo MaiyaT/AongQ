@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import "HomeTableViewCell.h"
 
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -24,7 +25,16 @@
     
     self.dataList = [[NSMutableArray alloc] init];
     
-    [self.dataList addObject:@{@"title":@"NSSecureCoding",@"subtitle":@"asd",@"vc":@"SecureCodingViewController",@"sugueid":@"pushSecure"}];
+    [self.dataList addObject:@{@"title":@"函数",@"subtitle":@"数学函数",@"vc":@"MathFuntionViewController"}];
+    
+    
+//    [self.dataList addObject:@{@"title":@"PropertyKeyWords",@"subtitle":@"属性的关键字",@"vc":@"PropertyKeyWordVController"}];
+    
+    
+    [self.dataList addObject:@{@"title":@"NSSecureCoding",@"subtitle":@"归档-编码解码",@"vc":@"SecureCodingViewController",@"sugueid":@"pushSecure"}];
+    
+    
+    
     
     self.tableV.tableFooterView = [UIView new];
 }
@@ -34,6 +44,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 60;
+}
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.dataList.count;
@@ -41,40 +56,45 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"noteCellIdentify"];
+    HomeTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"noteCellIdentify"];
     
     NSDictionary * dataDic = self.dataList[indexPath.row];
     
     NSString * title = dataDic[@"title"];
     NSString * subtitle = dataDic[@"subtitle"];
     
-    cell.textLabel.text = title;
-    cell.detailTextLabel.text = subtitle?subtitle:@"";
+    cell.cellTitle.text = title;
+    cell.cellSubTitle.text = subtitle?subtitle:@"";
     
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
     NSDictionary * dataDic = self.dataList[indexPath.row];
     
     NSString * title = dataDic[@"title"];
     NSString * vcClass   = dataDic[@"vc"];
     NSString * sugueid = dataDic[@"sugueid"];
     
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self performSegueWithIdentifier:sugueid sender:self];
-    });
+    if(sugueid)
+    {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self performSegueWithIdentifier:sugueid sender:self];
+        });
+    }
 //    else if ([[self storyboard] instantiateViewControllerWithIdentifier:vcClass])
 //    {
 //        [self.navigationController pushViewController:[[self storyboard] instantiateViewControllerWithIdentifier:vcClass] animated:YES];
 //    }
-//    else
-//    {
-//        UIViewController * vc = [[NSClassFromString(vcClass) alloc] init];
-//        vc.title = title;
-//        [self.navigationController pushViewController:vc animated:YES];
-//    }
+    else
+    {
+        UIViewController * vc = [[NSClassFromString(vcClass) alloc] init];
+        vc.title = title;
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 //判断 segue跳不跳

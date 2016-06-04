@@ -15,6 +15,8 @@
 		7A2BAE5E1D0005AD00D0F967 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2BAE5D1D0005AD00D0F967 /* HomeViewController.m */; };
 		7A2BAE621D000C2700D0F967 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2BAE611D000C2700D0F967 /* HomeTableViewCell.m */; };
 		7A2BAE661D00210E00D0F967 /* SecureCodingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2BAE651D00210E00D0F967 /* SecureCodingViewController.m */; };
+		7A2DED191D01B7EC003E4B07 /* PropertyKeyWordVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2DED181D01B7EC003E4B07 /* PropertyKeyWordVController.m */; };
+		7A2DED1D1D01E14E003E4B07 /* MathFuntionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2DED1C1D01E14E003E4B07 /* MathFuntionViewController.m */; };
 		7AA8CE291D00694000669047 /* SecureObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA8CE281D00694000669047 /* SecureObj.m */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,10 @@
 		7A2BAE611D000C2700D0F967 /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
 		7A2BAE641D00210E00D0F967 /* SecureCodingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecureCodingViewController.h; sourceTree = "<group>"; };
 		7A2BAE651D00210E00D0F967 /* SecureCodingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecureCodingViewController.m; sourceTree = "<group>"; };
+		7A2DED171D01B7EC003E4B07 /* PropertyKeyWordVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyKeyWordVController.h; sourceTree = "<group>"; };
+		7A2DED181D01B7EC003E4B07 /* PropertyKeyWordVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyKeyWordVController.m; sourceTree = "<group>"; };
+		7A2DED1B1D01E14E003E4B07 /* MathFuntionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathFuntionViewController.h; sourceTree = "<group>"; };
+		7A2DED1C1D01E14E003E4B07 /* MathFuntionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathFuntionViewController.m; sourceTree = "<group>"; };
 		7AA8CE271D00694000669047 /* SecureObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecureObj.h; sourceTree = "<group>"; };
 		7AA8CE281D00694000669047 /* SecureObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecureObj.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +97,8 @@
 		7A2BAE5A1D00059A00D0F967 /* vc */ = {
 			isa = PBXGroup;
 			children = (
+				7A2DED1A1D01E142003E4B07 /* MathFuntion */,
+				7A2DED161D01B7D2003E4B07 /* propertyKeyWord */,
 				7A2BAE631D00210300D0F967 /* SecureCodingVC */,
 				7A2BAE5F1D000C1600D0F967 /* cell */,
 				7A2BAE5C1D0005AD00D0F967 /* HomeViewController.h */,
@@ -124,6 +132,24 @@
 				7AA8CE281D00694000669047 /* SecureObj.m */,
 			);
 			path = SecureCodingVC;
+			sourceTree = "<group>";
+		};
+		7A2DED161D01B7D2003E4B07 /* propertyKeyWord */ = {
+			isa = PBXGroup;
+			children = (
+				7A2DED171D01B7EC003E4B07 /* PropertyKeyWordVController.h */,
+				7A2DED181D01B7EC003E4B07 /* PropertyKeyWordVController.m */,
+			);
+			path = propertyKeyWord;
+			sourceTree = "<group>";
+		};
+		7A2DED1A1D01E142003E4B07 /* MathFuntion */ = {
+			isa = PBXGroup;
+			children = (
+				7A2DED1B1D01E14E003E4B07 /* MathFuntionViewController.h */,
+				7A2DED1C1D01E14E003E4B07 /* MathFuntionViewController.m */,
+			);
+			path = MathFuntion;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,7 +222,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A2DED191D01B7EC003E4B07 /* PropertyKeyWordVController.m in Sources */,
 				7A2BAE451D0004D700D0F967 /* AppDelegate.m in Sources */,
+				7A2DED1D1D01E14E003E4B07 /* MathFuntionViewController.m in Sources */,
 				7A2BAE421D0004D700D0F967 /* main.m in Sources */,
 				7AA8CE291D00694000669047 /* SecureObj.m in Sources */,
 				7A2BAE621D000C2700D0F967 /* HomeTableViewCell.m in Sources */,

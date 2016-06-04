@@ -27,8 +27,35 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HDB-tL-hCd" id="EcU-eH-eVV">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nP-wR-eLV" userLabel="Title">
+                                                    <rect key="frame" x="20" y="10" width="527" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0i-T5-vdB" userLabel="SubTitle">
+                                                    <rect key="frame" x="20" y="29" width="527" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="9nP-wR-eLV" firstAttribute="leading" secondItem="EcU-eH-eVV" secondAttribute="leading" constant="20" id="6JH-HZ-97U"/>
+                                                <constraint firstAttribute="bottom" secondItem="t0i-T5-vdB" secondAttribute="bottom" id="BXa-6a-SA4"/>
+                                                <constraint firstAttribute="trailing" secondItem="t0i-T5-vdB" secondAttribute="trailing" constant="20" id="CIg-nn-qpq"/>
+                                                <constraint firstAttribute="trailing" secondItem="9nP-wR-eLV" secondAttribute="trailing" constant="20" id="GRy-8g-Cct"/>
+                                                <constraint firstAttribute="bottom" secondItem="9nP-wR-eLV" secondAttribute="bottom" constant="10" id="NkG-jg-uiq"/>
+                                                <constraint firstItem="t0i-T5-vdB" firstAttribute="leading" secondItem="EcU-eH-eVV" secondAttribute="leading" constant="20" id="x2M-DR-PYs"/>
+                                                <constraint firstItem="9nP-wR-eLV" firstAttribute="top" secondItem="EcU-eH-eVV" secondAttribute="top" constant="10" id="zr7-Ht-TpU"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="cellSubTitle" destination="t0i-T5-vdB" id="ObN-6X-bJs"/>
+                                            <outlet property="cellTitle" destination="9nP-wR-eLV" id="GJd-fp-KPb"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
