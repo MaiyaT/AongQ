@@ -25,13 +25,15 @@
     
     self.dataList = [[NSMutableArray alloc] init];
     
-    [self.dataList addObject:@{@"title":@"函数",@"subtitle":@"数学函数",@"vc":@"MathFuntionViewController"}];
+    [self.dataList addObject:@{@"title":@"AFNetworking",@"subtitle":@"2016-6-4__AFN框架学习",@"vc":@"AFNetworkingViewController"}];
+    
+    [self.dataList addObject:@{@"title":@"函数",@"subtitle":@"2016-6-3__数学函数",@"vc":@"MathFuntionViewController"}];
     
     
-//    [self.dataList addObject:@{@"title":@"PropertyKeyWords",@"subtitle":@"属性的关键字",@"vc":@"PropertyKeyWordVController"}];
+    [self.dataList addObject:@{@"title":@"PropertyKeyWords",@"subtitle":@"2016-6-2__属性的关键字",@"vc":@"PropertyKeyWordVController"}];
     
     
-    [self.dataList addObject:@{@"title":@"NSSecureCoding",@"subtitle":@"归档-编码解码",@"vc":@"SecureCodingViewController",@"sugueid":@"pushSecure"}];
+    [self.dataList addObject:@{@"title":@"NSSecureCoding",@"subtitle":@"2016-6-1__归档-编码解码",@"vc":@"SecureCodingViewController",@"sugueid":@"pushSecure"}];
     
     
     

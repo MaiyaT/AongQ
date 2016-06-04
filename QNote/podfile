@@ -1,0 +1,11 @@
+platform :ios, '7.0'
+inhibit_all_warnings!
+
+target 'QNote' do
+
+pod 'FMDB'
+pod 'pop'
+pod 'Masonry'
+pod 'AFNetworking'
+
+end

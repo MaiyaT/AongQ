@@ -11,6 +11,10 @@
 /*
  参考：
  http://www.jianshu.com/p/e3c99b426492
+ 
+ iOS7 CookBook精彩瞬间（一）property、selector细节、__unused
+ http://www.bubuko.com/infodetail-1069958.html
+ 
  */
 
 @interface PropertyKeyWordVController ()
@@ -20,6 +24,13 @@
 
 @property (nonatomic, strong) NSObject * obj3;
 @property (nonatomic, weak) NSObject * obj4;
+
+
+@property (nonatomic, strong, nonnull) NSObject * obj5;
+@property (nonatomic, strong) NSObject * __nonnull obj6;
+@property (nonatomic, strong, nullable) NSObject * obj7;
+@property (nonatomic, strong) NSObject * __nullable obj8;
+
 
 @end
 
@@ -58,7 +69,67 @@
 //    id __weak obj = [NSObject new];
 //    NSLog(@"%@",obj);
     
+    
+    //6.3 XCode的时候 一个OC特性 nullability
+    
+    /**
+     *  __nullable
+     *
+     *  表示一个可以是NULL 或者 nil的空值
+     */
+    
+    /**
+     *  __nonnull
+     *
+     *  表示一个不能为空的 值  方法传参的时候可以进行限制
+     */
+    
+    //带下划线修饰在后面 在前面修饰不带下划线
+    
+    [self daydayStudy1:@"base oc"];
+    [self daydayStudy2:@"null oc"];
+    
+    [self daydayStudy3:nil];
+    [self daydayStudy4:@"zero"];
+
+
+//    self.obj5 = nil;
+//    self.obj6 = nil;
+//    self.obj7 = nil;
+//    self.obj8 = nil;
+    
+    
+    //nonatomic 是非线程安全  多线程修改的时候不加锁，可能会出现多个线程先后修改之后数据错乱 脏数据
+    
+    //unsafe  unretained   和 assign作用一样   如果是修饰对象 这个property只是指向数据的指针 跟weak一样作用
+    
+    //指针指向的数据 如果释放了 weak这个指针也自动变成nil 但是assign 不会****
+    
+    //copy 和 strong 都是使计数+1
+    //
 }
+
+
+- (void)daydayStudy1:(NSString * __nonnull)language
+{
+    NSLog(@"#####%@",language);
+}
+
+- (void)daydayStudy2:(nonnull NSString *)language
+{
+    NSLog(@"#####%@",language);
+}
+
+- (void)daydayStudy3:(NSString * __nullable)language
+{
+    NSLog(@"#####%@",language);
+}
+
+- (void)daydayStudy4:(nullable NSString *)language
+{
+    NSLog(@"#####%@",language);
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

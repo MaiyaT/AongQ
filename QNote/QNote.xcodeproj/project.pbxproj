@@ -17,10 +17,17 @@
 		7A2BAE661D00210E00D0F967 /* SecureCodingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2BAE651D00210E00D0F967 /* SecureCodingViewController.m */; };
 		7A2DED191D01B7EC003E4B07 /* PropertyKeyWordVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2DED181D01B7EC003E4B07 /* PropertyKeyWordVController.m */; };
 		7A2DED1D1D01E14E003E4B07 /* MathFuntionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2DED1C1D01E14E003E4B07 /* MathFuntionViewController.m */; };
+		7A3C0EAE1D025AB900BD9832 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3C0EAD1D025AB900BD9832 /* BaseViewController.m */; };
+		7A3C0EB21D025FDD00BD9832 /* AFNetworkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3C0EB11D025FDD00BD9832 /* AFNetworkingViewController.m */; };
+		7A3C0EB61D02615B00BD9832 /* AFNTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3C0EB51D02615B00BD9832 /* AFNTableViewCell.m */; };
+		7A3C0EBA1D02618300BD9832 /* AFNItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3C0EB91D02618300BD9832 /* AFNItem.m */; };
 		7AA8CE291D00694000669047 /* SecureObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA8CE281D00694000669047 /* SecureObj.m */; };
+		D91CFD6BADD5D1B19F92DCAA /* libPods-QNote.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C83ECE2705A2147CB772435 /* libPods-QNote.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D04A53866E2B73E5A439451 /* Pods-QNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QNote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QNote/Pods-QNote.debug.xcconfig"; sourceTree = "<group>"; };
+		6C83ECE2705A2147CB772435 /* libPods-QNote.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QNote.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A2BAE3D1D0004D700D0F967 /* QNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A2BAE411D0004D700D0F967 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7A2BAE431D0004D700D0F967 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,8 +46,17 @@
 		7A2DED181D01B7EC003E4B07 /* PropertyKeyWordVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyKeyWordVController.m; sourceTree = "<group>"; };
 		7A2DED1B1D01E14E003E4B07 /* MathFuntionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathFuntionViewController.h; sourceTree = "<group>"; };
 		7A2DED1C1D01E14E003E4B07 /* MathFuntionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathFuntionViewController.m; sourceTree = "<group>"; };
+		7A3C0EAC1D025AB900BD9832 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		7A3C0EAD1D025AB900BD9832 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		7A3C0EB01D025FDD00BD9832 /* AFNetworkingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkingViewController.h; sourceTree = "<group>"; };
+		7A3C0EB11D025FDD00BD9832 /* AFNetworkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingViewController.m; sourceTree = "<group>"; };
+		7A3C0EB41D02615B00BD9832 /* AFNTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNTableViewCell.h; sourceTree = "<group>"; };
+		7A3C0EB51D02615B00BD9832 /* AFNTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNTableViewCell.m; sourceTree = "<group>"; };
+		7A3C0EB81D02618300BD9832 /* AFNItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNItem.h; sourceTree = "<group>"; };
+		7A3C0EB91D02618300BD9832 /* AFNItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNItem.m; sourceTree = "<group>"; };
 		7AA8CE271D00694000669047 /* SecureObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecureObj.h; sourceTree = "<group>"; };
 		7AA8CE281D00694000669047 /* SecureObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecureObj.m; sourceTree = "<group>"; };
+		86E887FD80964491631D88C4 /* Pods-QNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QNote.release.xcconfig"; path = "Pods/Target Support Files/Pods-QNote/Pods-QNote.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,17 +64,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D91CFD6BADD5D1B19F92DCAA /* libPods-QNote.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4539521812420E190AE98632 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C83ECE2705A2147CB772435 /* libPods-QNote.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7A2BAE341D0004D700D0F967 = {
 			isa = PBXGroup;
 			children = (
 				7A2BAE3F1D0004D700D0F967 /* QNote */,
 				7A2BAE3E1D0004D700D0F967 /* Products */,
+				802B37B7B2F878EA19C4700D /* Pods */,
+				4539521812420E190AE98632 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +124,8 @@
 		7A2BAE5A1D00059A00D0F967 /* vc */ = {
 			isa = PBXGroup;
 			children = (
+				7A3C0EAF1D025FC900BD9832 /* AFNetwork */,
+				7A3C0EAB1D025AA700BD9832 /* base */,
 				7A2DED1A1D01E142003E4B07 /* MathFuntion */,
 				7A2DED161D01B7D2003E4B07 /* propertyKeyWord */,
 				7A2BAE631D00210300D0F967 /* SecureCodingVC */,
@@ -152,6 +181,53 @@
 			path = MathFuntion;
 			sourceTree = "<group>";
 		};
+		7A3C0EAB1D025AA700BD9832 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				7A3C0EAC1D025AB900BD9832 /* BaseViewController.h */,
+				7A3C0EAD1D025AB900BD9832 /* BaseViewController.m */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		7A3C0EAF1D025FC900BD9832 /* AFNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				7A3C0EB71D02616700BD9832 /* module */,
+				7A3C0EB31D02604400BD9832 /* cell */,
+				7A3C0EB01D025FDD00BD9832 /* AFNetworkingViewController.h */,
+				7A3C0EB11D025FDD00BD9832 /* AFNetworkingViewController.m */,
+			);
+			path = AFNetwork;
+			sourceTree = "<group>";
+		};
+		7A3C0EB31D02604400BD9832 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				7A3C0EB41D02615B00BD9832 /* AFNTableViewCell.h */,
+				7A3C0EB51D02615B00BD9832 /* AFNTableViewCell.m */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		7A3C0EB71D02616700BD9832 /* module */ = {
+			isa = PBXGroup;
+			children = (
+				7A3C0EB81D02618300BD9832 /* AFNItem.h */,
+				7A3C0EB91D02618300BD9832 /* AFNItem.m */,
+			);
+			name = module;
+			sourceTree = "<group>";
+		};
+		802B37B7B2F878EA19C4700D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D04A53866E2B73E5A439451 /* Pods-QNote.debug.xcconfig */,
+				86E887FD80964491631D88C4 /* Pods-QNote.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +235,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A2BAE541D0004D700D0F967 /* Build configuration list for PBXNativeTarget "QNote" */;
 			buildPhases = (
+				6C3875AB0F512DFDBA9C4A64 /* 📦 Check Pods Manifest.lock */,
 				7A2BAE391D0004D700D0F967 /* Sources */,
 				7A2BAE3A1D0004D700D0F967 /* Frameworks */,
 				7A2BAE3B1D0004D700D0F967 /* Resources */,
+				F669070B051233E92F51C7C3 /* 📦 Embed Pods Frameworks */,
+				16DE7091C6E4CD8459F2EE00 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,15 +296,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16DE7091C6E4CD8459F2EE00 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QNote/Pods-QNote-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C3875AB0F512DFDBA9C4A64 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F669070B051233E92F51C7C3 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QNote/Pods-QNote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7A2BAE391D0004D700D0F967 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A3C0EB61D02615B00BD9832 /* AFNTableViewCell.m in Sources */,
 				7A2DED191D01B7EC003E4B07 /* PropertyKeyWordVController.m in Sources */,
+				7A3C0EAE1D025AB900BD9832 /* BaseViewController.m in Sources */,
 				7A2BAE451D0004D700D0F967 /* AppDelegate.m in Sources */,
+				7A3C0EBA1D02618300BD9832 /* AFNItem.m in Sources */,
 				7A2DED1D1D01E14E003E4B07 /* MathFuntionViewController.m in Sources */,
 				7A2BAE421D0004D700D0F967 /* main.m in Sources */,
+				7A3C0EB21D025FDD00BD9832 /* AFNetworkingViewController.m in Sources */,
 				7AA8CE291D00694000669047 /* SecureObj.m in Sources */,
 				7A2BAE621D000C2700D0F967 /* HomeTableViewCell.m in Sources */,
 				7A2BAE661D00210E00D0F967 /* SecureCodingViewController.m in Sources */,
@@ -339,6 +470,7 @@
 		};
 		7A2BAE551D0004D700D0F967 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D04A53866E2B73E5A439451 /* Pods-QNote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QNote/Info.plist;
@@ -351,6 +483,7 @@
 		};
 		7A2BAE561D0004D700D0F967 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86E887FD80964491631D88C4 /* Pods-QNote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QNote/Info.plist;

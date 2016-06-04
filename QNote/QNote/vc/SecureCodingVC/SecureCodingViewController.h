@@ -6,8 +6,8 @@
 //  Copyright © 2016年 林宁宁. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface SecureCodingViewController : UIViewController
+@interface SecureCodingViewController : BaseViewController
 
 @end
