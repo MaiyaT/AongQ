@@ -106,13 +106,28 @@
     //指针指向的数据 如果释放了 weak这个指针也自动变成nil 但是assign 不会****
     
     //copy 和 strong 都是使计数+1
+    
+    // NSString 使用 copy 和 strong 是没有差别的 都是指向同一地址 copy是浅拷贝
+    // NSMutableString strong是计数+1 没有新的内存空间  copy深拷贝 有新的内存地址
+    
     //
+    
+    // __unused 是告诉编译器 如果变量未使用 不参与编译 不然有警告
+    __unused UIButton * btn = [UIButton new];
+    
+    
+    
+    
+    
+    
+    
 }
 
 
 - (void)daydayStudy1:(NSString * __nonnull)language
 {
     NSLog(@"#####%@",language);
+    
 }
 
 - (void)daydayStudy2:(nonnull NSString *)language

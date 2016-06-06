@@ -7,5 +7,6 @@ pod 'FMDB'
 pod 'pop'
 pod 'Masonry'
 pod 'AFNetworking'
+pod 'MJRefresh'
 
 end

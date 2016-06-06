@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AFNPost.h"
 
 @interface AFNTableViewCell : UITableViewCell
+
+@property (nonatomic, strong) AFNPost *post;
+
++ (CGFloat)heightForCellWithPost:(AFNPost *)post;
+
++ (NSString *)cellIdentify;
 
 @end

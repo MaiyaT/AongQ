@@ -25,7 +25,12 @@
     
     self.dataList = [[NSMutableArray alloc] init];
     
-    [self.dataList addObject:@{@"title":@"AFNetworking",@"subtitle":@"2016-6-4__AFN框架学习",@"vc":@"AFNetworkingViewController"}];
+    [self.dataList addObject:@{@"title":@"AFNetworking—学习",@"subtitle":@"2016-6-4__框架学习",@"vc":@"AFNetworkingNoteVC"}];
+    
+    [self.dataList addObject:@{@"title":@"AFNetworking—demo",@"subtitle":@"2016-6-4__AFNDemo",@"vc":@"AFNetworkingViewController"}];
+    
+    
+    [self.dataList addObject:@{@"title":@"ValueForKeyPath",@"subtitle":@"2016-6-4__ValueForKeyPath操作",@"vc":@"ValueForKeyPathViewController"}];
     
     [self.dataList addObject:@{@"title":@"函数",@"subtitle":@"2016-6-3__数学函数",@"vc":@"MathFuntionViewController"}];
     
@@ -73,6 +78,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     NSDictionary * dataDic = self.dataList[indexPath.row];

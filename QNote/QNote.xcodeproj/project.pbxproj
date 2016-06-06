@@ -20,7 +20,11 @@
 		7A3C0EAE1D025AB900BD9832 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3C0EAD1D025AB900BD9832 /* BaseViewController.m */; };
 		7A3C0EB21D025FDD00BD9832 /* AFNetworkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3C0EB11D025FDD00BD9832 /* AFNetworkingViewController.m */; };
 		7A3C0EB61D02615B00BD9832 /* AFNTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3C0EB51D02615B00BD9832 /* AFNTableViewCell.m */; };
-		7A3C0EBA1D02618300BD9832 /* AFNItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3C0EB91D02618300BD9832 /* AFNItem.m */; };
+		7A9DF3FD1D0296E7002B4BA4 /* AFNPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9DF3FC1D0296E7002B4BA4 /* AFNPost.m */; };
+		7A9DF4001D0296F1002B4BA4 /* AFNUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9DF3FF1D0296F1002B4BA4 /* AFNUser.m */; };
+		7A9DF4041D02BF18002B4BA4 /* ValueForKeyPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9DF4031D02BF18002B4BA4 /* ValueForKeyPathViewController.m */; };
+		7A9DF4071D041A54002B4BA4 /* AFAppDotNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9DF4061D041A54002B4BA4 /* AFAppDotNetAPIClient.m */; };
+		7A9DF40A1D0450E5002B4BA4 /* AFNetworkingNoteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9DF4091D0450E5002B4BA4 /* AFNetworkingNoteVC.m */; };
 		7AA8CE291D00694000669047 /* SecureObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA8CE281D00694000669047 /* SecureObj.m */; };
 		D91CFD6BADD5D1B19F92DCAA /* libPods-QNote.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C83ECE2705A2147CB772435 /* libPods-QNote.a */; };
 /* End PBXBuildFile section */
@@ -52,8 +56,16 @@
 		7A3C0EB11D025FDD00BD9832 /* AFNetworkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingViewController.m; sourceTree = "<group>"; };
 		7A3C0EB41D02615B00BD9832 /* AFNTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNTableViewCell.h; sourceTree = "<group>"; };
 		7A3C0EB51D02615B00BD9832 /* AFNTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNTableViewCell.m; sourceTree = "<group>"; };
-		7A3C0EB81D02618300BD9832 /* AFNItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNItem.h; sourceTree = "<group>"; };
-		7A3C0EB91D02618300BD9832 /* AFNItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNItem.m; sourceTree = "<group>"; };
+		7A9DF3FB1D0296E7002B4BA4 /* AFNPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNPost.h; sourceTree = "<group>"; };
+		7A9DF3FC1D0296E7002B4BA4 /* AFNPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNPost.m; sourceTree = "<group>"; };
+		7A9DF3FE1D0296F1002B4BA4 /* AFNUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNUser.h; sourceTree = "<group>"; };
+		7A9DF3FF1D0296F1002B4BA4 /* AFNUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNUser.m; sourceTree = "<group>"; };
+		7A9DF4021D02BF18002B4BA4 /* ValueForKeyPathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValueForKeyPathViewController.h; sourceTree = "<group>"; };
+		7A9DF4031D02BF18002B4BA4 /* ValueForKeyPathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValueForKeyPathViewController.m; sourceTree = "<group>"; };
+		7A9DF4051D041A54002B4BA4 /* AFAppDotNetAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAppDotNetAPIClient.h; sourceTree = "<group>"; };
+		7A9DF4061D041A54002B4BA4 /* AFAppDotNetAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAppDotNetAPIClient.m; sourceTree = "<group>"; };
+		7A9DF4081D0450E5002B4BA4 /* AFNetworkingNoteVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkingNoteVC.h; sourceTree = "<group>"; };
+		7A9DF4091D0450E5002B4BA4 /* AFNetworkingNoteVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingNoteVC.m; sourceTree = "<group>"; };
 		7AA8CE271D00694000669047 /* SecureObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecureObj.h; sourceTree = "<group>"; };
 		7AA8CE281D00694000669047 /* SecureObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecureObj.m; sourceTree = "<group>"; };
 		86E887FD80964491631D88C4 /* Pods-QNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QNote.release.xcconfig"; path = "Pods/Target Support Files/Pods-QNote/Pods-QNote.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +136,7 @@
 		7A2BAE5A1D00059A00D0F967 /* vc */ = {
 			isa = PBXGroup;
 			children = (
+				7A9DF4011D02BF0A002B4BA4 /* valueForKeyPath */,
 				7A3C0EAF1D025FC900BD9832 /* AFNetwork */,
 				7A3C0EAB1D025AA700BD9832 /* base */,
 				7A2DED1A1D01E142003E4B07 /* MathFuntion */,
@@ -193,10 +206,13 @@
 		7A3C0EAF1D025FC900BD9832 /* AFNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				7A9DF3FA1D029655002B4BA4 /* http */,
 				7A3C0EB71D02616700BD9832 /* module */,
 				7A3C0EB31D02604400BD9832 /* cell */,
 				7A3C0EB01D025FDD00BD9832 /* AFNetworkingViewController.h */,
 				7A3C0EB11D025FDD00BD9832 /* AFNetworkingViewController.m */,
+				7A9DF4081D0450E5002B4BA4 /* AFNetworkingNoteVC.h */,
+				7A9DF4091D0450E5002B4BA4 /* AFNetworkingNoteVC.m */,
 			);
 			path = AFNetwork;
 			sourceTree = "<group>";
@@ -213,10 +229,30 @@
 		7A3C0EB71D02616700BD9832 /* module */ = {
 			isa = PBXGroup;
 			children = (
-				7A3C0EB81D02618300BD9832 /* AFNItem.h */,
-				7A3C0EB91D02618300BD9832 /* AFNItem.m */,
+				7A9DF3FB1D0296E7002B4BA4 /* AFNPost.h */,
+				7A9DF3FC1D0296E7002B4BA4 /* AFNPost.m */,
+				7A9DF3FE1D0296F1002B4BA4 /* AFNUser.h */,
+				7A9DF3FF1D0296F1002B4BA4 /* AFNUser.m */,
 			);
 			name = module;
+			sourceTree = "<group>";
+		};
+		7A9DF3FA1D029655002B4BA4 /* http */ = {
+			isa = PBXGroup;
+			children = (
+				7A9DF4051D041A54002B4BA4 /* AFAppDotNetAPIClient.h */,
+				7A9DF4061D041A54002B4BA4 /* AFAppDotNetAPIClient.m */,
+			);
+			name = http;
+			sourceTree = "<group>";
+		};
+		7A9DF4011D02BF0A002B4BA4 /* valueForKeyPath */ = {
+			isa = PBXGroup;
+			children = (
+				7A9DF4021D02BF18002B4BA4 /* ValueForKeyPathViewController.h */,
+				7A9DF4031D02BF18002B4BA4 /* ValueForKeyPathViewController.m */,
+			);
+			path = valueForKeyPath;
 			sourceTree = "<group>";
 		};
 		802B37B7B2F878EA19C4700D /* Pods */ = {
@@ -353,14 +389,18 @@
 				7A2DED191D01B7EC003E4B07 /* PropertyKeyWordVController.m in Sources */,
 				7A3C0EAE1D025AB900BD9832 /* BaseViewController.m in Sources */,
 				7A2BAE451D0004D700D0F967 /* AppDelegate.m in Sources */,
-				7A3C0EBA1D02618300BD9832 /* AFNItem.m in Sources */,
+				7A9DF4001D0296F1002B4BA4 /* AFNUser.m in Sources */,
 				7A2DED1D1D01E14E003E4B07 /* MathFuntionViewController.m in Sources */,
 				7A2BAE421D0004D700D0F967 /* main.m in Sources */,
 				7A3C0EB21D025FDD00BD9832 /* AFNetworkingViewController.m in Sources */,
+				7A9DF3FD1D0296E7002B4BA4 /* AFNPost.m in Sources */,
 				7AA8CE291D00694000669047 /* SecureObj.m in Sources */,
 				7A2BAE621D000C2700D0F967 /* HomeTableViewCell.m in Sources */,
 				7A2BAE661D00210E00D0F967 /* SecureCodingViewController.m in Sources */,
 				7A2BAE5E1D0005AD00D0F967 /* HomeViewController.m in Sources */,
+				7A9DF40A1D0450E5002B4BA4 /* AFNetworkingNoteVC.m in Sources */,
+				7A9DF4071D041A54002B4BA4 /* AFAppDotNetAPIClient.m in Sources */,
+				7A9DF4041D02BF18002B4BA4 /* ValueForKeyPathViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

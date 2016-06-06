@@ -18,20 +18,23 @@ PODS:
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
   - Masonry (1.0.1)
+  - MJRefresh (3.1.0)
   - pop (1.0.9)
 
 DEPENDENCIES:
   - AFNetworking
   - FMDB
   - Masonry
+  - MJRefresh
   - pop
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
 
-PODFILE CHECKSUM: 40b40c5bf27764c9852db156cdbcec44b2f50af0
+PODFILE CHECKSUM: 6e132b0c5baa92208d2f117b93883c4358a28d3e
 
 COCOAPODS: 1.0.0
