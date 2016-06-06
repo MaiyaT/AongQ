@@ -11,6 +11,7 @@
 #import <AFNetworking/AFURLSessionManager.h>
 #import <AFNetworking/AFNetworkReachabilityManager.h>
 
+
 @interface AFNetworkingNoteVC ()
 
 @end
@@ -71,127 +72,131 @@
     
     
     
-    // #############  AFURLSessionManager
-   
-    
-    {
-        // 文件下载
-        NSURLSessionConfiguration * configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
-        
-        AFURLSessionManager * manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
-        
-        NSURL * url = [NSURL URLWithString:@"http://bmob-cdn-250.b0.upaiyun.com/2016/04/20/2b4567fca78246e3a99513f80eca14fd.mp4"];
-        NSURLRequest * request = [NSURLRequest requestWithURL:url];
-        
-        __unused NSURLSessionDownloadTask * downloadTask = [manager downloadTaskWithRequest:request progress:^(NSProgress * _Nonnull downloadProgress) {
-            
-            NSLog(@"%f__%f",(float)downloadProgress.totalUnitCount,(float)downloadProgress.completedUnitCount);
-            
-        } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
-            
-            //存储的目录
-            
-            NSURL *documentsDirectoryURL = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:NO error:nil];
-            
-            return [documentsDirectoryURL URLByAppendingPathComponent:[response suggestedFilename]];
-            
-        } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
-            
-            NSLog(@"File downloaded to: %@", filePath);
-            
-        }];
-        
-        [downloadTask resume];
-    }
-    
-    
-
-    {
-        // 文件上传
-        
-        AFURLSessionManager * manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
-        
-        NSURL * urlUpload = [NSURL URLWithString:@"http://example.com/upload"];
-        NSURLRequest * requestUpload = [NSURLRequest requestWithURL:urlUpload];
-        
-        NSURL * filePath = [NSURL fileURLWithPath:@"file://path/to/image.png"];
-        NSURLSessionUploadTask * uploadTask =  [manager uploadTaskWithRequest:requestUpload fromFile:filePath progress:^(NSProgress * _Nonnull uploadProgress) {
-            
-        } completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
-            
-            if (error) {
-                NSLog(@"Error: %@", error);
-            } else {
-                NSLog(@"Success: %@ %@", response, responseObject);
-            }
-            
-        }];
-        
-        [uploadTask resume];
-    }
-    
-    
-    {
-        // NSMutableURLRequest 多数据格式请求
-        
-        AFURLSessionManager * manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
-        
-        NSMutableURLRequest * multiRequest = [[AFHTTPRequestSerializer serializer] multipartFormRequestWithMethod:@"POST" URLString:@"http://example.com/upload" parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
-            
-             [formData appendPartWithFileURL:[NSURL fileURLWithPath:@"file://path/to/image.jpg"] name:@"file" fileName:@"filename.jpg" mimeType:@"image/jpeg" error:nil];
-            
-        } error:nil];
-        
-        
-        NSURLSessionUploadTask * multiUploadTask = [manager uploadTaskWithStreamedRequest:multiRequest progress:^(NSProgress * _Nonnull uploadProgress) {
-            
-            NSLog(@"%f",uploadProgress.fractionCompleted);
-            
-        } completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
-            
-            if (error) {
-                NSLog(@"Error: %@", error);
-            } else {
-                NSLog(@"%@ %@", response, responseObject);
-            }
-        }];
-        
-        [multiUploadTask resume];
-    }
-    
-    
-    
-    {
-        // Data Task
-        AFURLSessionManager * manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
-        
-        NSURL * url = [NSURL URLWithString:@"http://httpbin.org/get"];
-        NSURLRequest * request = [NSURLRequest requestWithURL:url];
-        
-        NSURLSessionDataTask * dataTask = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
-           
-            if (error) {
-                NSLog(@"Error: %@", error);
-            } else {
-                NSLog(@"%@ %@", response, responseObject);
-            }
-            
-        }];
-        
-        [dataTask resume];
-    }
+//    // #############  AFURLSessionManager
+//   
+//    
+//    {
+//        // 文件下载
+//        NSURLSessionConfiguration * configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+//        
+//        AFURLSessionManager * manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
+//        
+//        NSURL * url = [NSURL URLWithString:@"http://bmob-cdn-250.b0.upaiyun.com/2016/04/20/2b4567fca78246e3a99513f80eca14fd.mp4"];
+//        NSURLRequest * request = [NSURLRequest requestWithURL:url];
+//        
+//        __unused NSURLSessionDownloadTask * downloadTask = [manager downloadTaskWithRequest:request progress:^(NSProgress * _Nonnull downloadProgress) {
+//            
+//            NSLog(@"%f__%f",(float)downloadProgress.totalUnitCount,(float)downloadProgress.completedUnitCount);
+//            
+//        } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
+//            
+//            //存储的目录
+//            
+//            NSURL *documentsDirectoryURL = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:NO error:nil];
+//            
+//            return [documentsDirectoryURL URLByAppendingPathComponent:[response suggestedFilename]];
+//            
+//        } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
+//            
+//            NSLog(@"File downloaded to: %@", filePath);
+//            
+//        }];
+//        
+//        [downloadTask resume];
+//    }
+//    
+//    
+//
+//    {
+//        // 文件上传
+//        
+//        AFURLSessionManager * manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+//        
+//        NSURL * urlUpload = [NSURL URLWithString:@"http://example.com/upload"];
+//        NSURLRequest * requestUpload = [NSURLRequest requestWithURL:urlUpload];
+//        
+//        NSURL * filePath = [NSURL fileURLWithPath:@"file://path/to/image.png"];
+//        NSURLSessionUploadTask * uploadTask =  [manager uploadTaskWithRequest:requestUpload fromFile:filePath progress:^(NSProgress * _Nonnull uploadProgress) {
+//            
+//        } completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+//            
+//            if (error) {
+//                NSLog(@"Error: %@", error);
+//            } else {
+//                NSLog(@"Success: %@ %@", response, responseObject);
+//            }
+//            
+//        }];
+//        
+//        [uploadTask resume];
+//    }
+//    
+//    
+//    {
+//        // NSMutableURLRequest 多数据格式请求
+//        
+//        AFURLSessionManager * manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+//        
+//        NSMutableURLRequest * multiRequest = [[AFHTTPRequestSerializer serializer] multipartFormRequestWithMethod:@"POST" URLString:@"http://example.com/upload" parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+//            
+//             [formData appendPartWithFileURL:[NSURL fileURLWithPath:@"file://path/to/image.jpg"] name:@"file" fileName:@"filename.jpg" mimeType:@"image/jpeg" error:nil];
+//            
+//        } error:nil];
+//        
+//        
+//        NSURLSessionUploadTask * multiUploadTask = [manager uploadTaskWithStreamedRequest:multiRequest progress:^(NSProgress * _Nonnull uploadProgress) {
+//            
+//            NSLog(@"%f",uploadProgress.fractionCompleted);
+//            
+//        } completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+//            
+//            if (error) {
+//                NSLog(@"Error: %@", error);
+//            } else {
+//                NSLog(@"%@ %@", response, responseObject);
+//            }
+//        }];
+//        
+//        [multiUploadTask resume];
+//    }
+//    
+//    
+//    
+//    {
+//        // Data Task
+//        AFURLSessionManager * manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+//        
+//        NSURL * url = [NSURL URLWithString:@"http://httpbin.org/get"];
+//        NSURLRequest * request = [NSURLRequest requestWithURL:url];
+//        
+//        NSURLSessionDataTask * dataTask = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+//           
+//            if (error) {
+//                NSLog(@"Error: %@", error);
+//            } else {
+//                NSLog(@"%@ %@", response, responseObject);
+//            }
+//            
+//        }];
+//        
+//        [dataTask resume];
+//    }
     
     
     {
     
         NSString *URLString = @"http://example.com";
         NSDictionary *parameters = @{@"foo": @"bar", @"baz": @[@1, @2, @3]};
+
         
         
         
-        [[AFHTTPRequestSerializer serializer] requestWithMethod:@"GET" URLString:URLString parameters:parameters error:nil];
+        
+         [[AFHTTPRequestSerializer serializer] requestWithMethod:@"GET" URLString:URLString parameters:parameters error:nil];
         
         //GET http://example.com?foo=bar&baz[]=1&baz[]=2&baz[]=3
+        
+        
         
         
         
@@ -228,6 +233,61 @@
     
         [[AFNetworkReachabilityManager sharedManager] startMonitoring];
     }
+    
+    
+    
+    {
+        
+        NSString *URLString = @"https://tcc.taobao.com/cc/json/mobile_tel_segment.htm";
+        NSDictionary *parameters = @{@"tel": @"13222222222"};
+        
+        
+        AFHTTPSessionManager * manager = [AFHTTPSessionManager manager];
+        
+        manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+        
+        
+        [manager GET:URLString parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
+            // 这里可以获取到目前的数据请求的进度
+        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            // 请求成功，解析数据
+            NSLog(@"%@", responseObject);
+            NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers | NSJSONReadingMutableLeaves error:nil];
+            
+            NSLog(@"%@", dic);
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            // 请求失败
+            NSLog(@"%@", [error localizedDescription]);
+        }];
+        
+        
+        
+        [manager POST:URLString parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
+            
+        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            
+        }];
+        
+        
+        [manager POST:URLString parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+            // 拼接data到请求体，这个block的参数是遵守AFMultipartFormData协议的。
+            
+        } progress:^(NSProgress * _Nonnull uploadProgress) {
+            // 这里可以获取到目前的数据请求的进度
+        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            
+            // 请求成功，解析数据
+            NSLog(@"%@", responseObject);
+            
+            NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers | NSJSONReadingMutableLeaves error:nil];
+            
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            
+        }];
+    }
+    
 }
 
 

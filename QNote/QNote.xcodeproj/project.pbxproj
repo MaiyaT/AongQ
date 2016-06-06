@@ -20,6 +20,7 @@
 		7A3C0EAE1D025AB900BD9832 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3C0EAD1D025AB900BD9832 /* BaseViewController.m */; };
 		7A3C0EB21D025FDD00BD9832 /* AFNetworkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3C0EB11D025FDD00BD9832 /* AFNetworkingViewController.m */; };
 		7A3C0EB61D02615B00BD9832 /* AFNTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3C0EB51D02615B00BD9832 /* AFNTableViewCell.m */; };
+		7A86835C1D0579D3006F0ECD /* YHHttps.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A86835B1D0579D3006F0ECD /* YHHttps.m */; };
 		7A9DF3FD1D0296E7002B4BA4 /* AFNPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9DF3FC1D0296E7002B4BA4 /* AFNPost.m */; };
 		7A9DF4001D0296F1002B4BA4 /* AFNUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9DF3FF1D0296F1002B4BA4 /* AFNUser.m */; };
 		7A9DF4041D02BF18002B4BA4 /* ValueForKeyPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9DF4031D02BF18002B4BA4 /* ValueForKeyPathViewController.m */; };
@@ -56,6 +57,8 @@
 		7A3C0EB11D025FDD00BD9832 /* AFNetworkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingViewController.m; sourceTree = "<group>"; };
 		7A3C0EB41D02615B00BD9832 /* AFNTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNTableViewCell.h; sourceTree = "<group>"; };
 		7A3C0EB51D02615B00BD9832 /* AFNTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNTableViewCell.m; sourceTree = "<group>"; };
+		7A86835A1D0579D3006F0ECD /* YHHttps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHHttps.h; sourceTree = "<group>"; };
+		7A86835B1D0579D3006F0ECD /* YHHttps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHHttps.m; sourceTree = "<group>"; };
 		7A9DF3FB1D0296E7002B4BA4 /* AFNPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNPost.h; sourceTree = "<group>"; };
 		7A9DF3FC1D0296E7002B4BA4 /* AFNPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNPost.m; sourceTree = "<group>"; };
 		7A9DF3FE1D0296F1002B4BA4 /* AFNUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNUser.h; sourceTree = "<group>"; };
@@ -206,6 +209,7 @@
 		7A3C0EAF1D025FC900BD9832 /* AFNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				7A8683591D057282006F0ECD /* httpTool */,
 				7A9DF3FA1D029655002B4BA4 /* http */,
 				7A3C0EB71D02616700BD9832 /* module */,
 				7A3C0EB31D02604400BD9832 /* cell */,
@@ -235,6 +239,15 @@
 				7A9DF3FF1D0296F1002B4BA4 /* AFNUser.m */,
 			);
 			name = module;
+			sourceTree = "<group>";
+		};
+		7A8683591D057282006F0ECD /* httpTool */ = {
+			isa = PBXGroup;
+			children = (
+				7A86835A1D0579D3006F0ECD /* YHHttps.h */,
+				7A86835B1D0579D3006F0ECD /* YHHttps.m */,
+			);
+			name = httpTool;
 			sourceTree = "<group>";
 		};
 		7A9DF3FA1D029655002B4BA4 /* http */ = {
@@ -391,6 +404,7 @@
 				7A2BAE451D0004D700D0F967 /* AppDelegate.m in Sources */,
 				7A9DF4001D0296F1002B4BA4 /* AFNUser.m in Sources */,
 				7A2DED1D1D01E14E003E4B07 /* MathFuntionViewController.m in Sources */,
+				7A86835C1D0579D3006F0ECD /* YHHttps.m in Sources */,
 				7A2BAE421D0004D700D0F967 /* main.m in Sources */,
 				7A3C0EB21D025FDD00BD9832 /* AFNetworkingViewController.m in Sources */,
 				7A9DF3FD1D0296E7002B4BA4 /* AFNPost.m in Sources */,
