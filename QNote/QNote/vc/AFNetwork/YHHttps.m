@@ -31,18 +31,18 @@ static NSInteger const kTimeOutInterval = 20;
     return manager;
 }
 
-+(void)httpsGetWithURL:(NSString *)url andParameterDic:(NSDictionary *)parameterDic andResponseBlock:(void (^)(YHResponseObj *))responseBlock
++(void)httpsGetWithURL:(NSString *)url andParameterDic:(NSDictionary *)parameterDic andResponseBlock:(void (^)(RequestResultObj *))responseBlock
 {
     [self httpsGetWithURL:url andParameterDic:parameterDic andResponseBlock:responseBlock withIsJson:YES];
 }
 
-+(void)httpsGetWithURL:(NSString *)url andJSonParameterDic:(NSDictionary *)parameterDic andResponseBlock:(void (^)(YHResponseObj *))responseBlock
++(void)httpsGetWithURL:(NSString *)url andJSonParameterDic:(NSDictionary *)parameterDic andResponseBlock:(void (^)(RequestResultObj *))responseBlock
 {
     [self httpsGetWithURL:url andParameterDic:parameterDic andResponseBlock:responseBlock withIsJson:NO];
 }
 
 
-+ (void)httpsGetWithURL:(NSString *)url andParameterDic:(NSDictionary *)parameterDic andResponseBlock:(void (^)(YHResponseObj *))responseBlock withIsJson:(BOOL)isJson
++ (void)httpsGetWithURL:(NSString *)url andParameterDic:(NSDictionary *)parameterDic andResponseBlock:(void (^)(RequestResultObj *))responseBlock withIsJson:(BOOL)isJson
 {
     // get请求也可以直接将参数放在字典里，AFN会自己讲参数拼接在url的后面，不需要自己凭借
     
@@ -63,8 +63,8 @@ static NSInteger const kTimeOutInterval = 20;
         {
             NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
             
-            YHResponseObj * obj = [YHResponseObj new];
-            obj.resultObj = dict;
+            RequestResultObj * obj = [RequestResultObj new];
+            obj.data = dict;
             obj.url = task.currentRequest.URL.absoluteString;
             obj.jsonStr = [[NSString alloc] initWithData:responseObject encoding:4];
             
@@ -80,7 +80,7 @@ static NSInteger const kTimeOutInterval = 20;
                 responseBlock(nil);
             }
         }
-
+        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         // 请求失败
         if(responseBlock)
@@ -90,19 +90,19 @@ static NSInteger const kTimeOutInterval = 20;
     }];
 }
 
-+ (void)httpsPostWithURL:(NSString *)url andParameterDic:(NSDictionary *)parameterDic andResponseBlock:(void (^)(YHResponseObj *))responseBlock
++ (void)httpsPostWithURL:(NSString *)url andParameterDic:(NSDictionary *)parameterDic andResponseBlock:(void (^)(RequestResultObj *))responseBlock
 {
     [self httpsPostWithURL:url andParameterDic:parameterDic andResponseBlock:responseBlock withIsJson:NO];
 }
 
 
-+ (void)httpsPostWithURL:(NSString *)url andJSonParameterDic:(NSDictionary *)parameterDic andResponseBlock:(void (^)(YHResponseObj *))responseBlock
++ (void)httpsPostWithURL:(NSString *)url andJSonParameterDic:(NSDictionary *)parameterDic andResponseBlock:(void (^)(RequestResultObj *))responseBlock
 {
     [self httpsPostWithURL:url andParameterDic:parameterDic andResponseBlock:responseBlock withIsJson:YES];
 }
 
 
-+ (void)httpsPostWithURL:(NSString *)url andParameterDic:(NSDictionary *)parameterDic andResponseBlock:(void (^)(YHResponseObj *))responseBlock withIsJson:(BOOL)isJson
++ (void)httpsPostWithURL:(NSString *)url andParameterDic:(NSDictionary *)parameterDic andResponseBlock:(void (^)(RequestResultObj *))responseBlock withIsJson:(BOOL)isJson
 {
     // 创建请求类
     AFHTTPSessionManager *manager = [self manager];
@@ -121,8 +121,8 @@ static NSInteger const kTimeOutInterval = 20;
         {
             NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
             
-            YHResponseObj * obj = [YHResponseObj new];
-            obj.resultObj = dict;
+            RequestResultObj * obj = [RequestResultObj new];
+            obj.data = dict;
             obj.url = task.currentRequest.URL.absoluteString;
             obj.jsonStr = [[NSString alloc] initWithData:responseObject encoding:4];
             
@@ -149,11 +149,67 @@ static NSInteger const kTimeOutInterval = 20;
     
 }
 
++ (void)httpsPostWithURL:(NSString *)url andData:(NSData *)postData andResponseBlock:(void (^)(RequestResultObj *))responseBlock
+{
+    NSParameterAssert(postData);
+    
+    // 创建请求类
+    AFHTTPSessionManager *manager = [self manager];
+    
+    NSError *serializationError = nil;
+    NSMutableURLRequest *request = [manager.requestSerializer requestWithMethod:@"POST" URLString:url parameters:@{} error:&serializationError];
+    [request setHTTPBody:postData];
+    
+    if (serializationError) {
+        if (responseBlock) {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wgnu"
+            dispatch_async(manager.completionQueue ?: dispatch_get_main_queue(), ^{
+                responseBlock(nil);
+            });
+#pragma clang diagnostic pop
+        }
+    }
+    
+    __block NSURLSessionDataTask *dataTask = nil;
+    dataTask = [manager dataTaskWithRequest:request
+                             uploadProgress:nil
+                           downloadProgress:nil
+                          completionHandler:^(NSURLResponse * __unused response, id responseObject, NSError *error) {
+                              
+                              if (responseObject)
+                              {
+                                  NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
+                                  
+                                  RequestResultObj * obj = [RequestResultObj new];
+                                  obj.data = dict;
+                                  obj.url = response.URL.absoluteString;
+                                  obj.jsonStr = [[NSString alloc] initWithData:responseObject encoding:4];
+                                  
+                                  
+                                  if (responseBlock)
+                                  {
+                                      responseBlock(obj);
+                                  }
+                              }
+                              else
+                              {
+                                  if (responseBlock) {
+                                      responseBlock(nil);
+                                  }
+                              }
+                          }];
+    
+    [dataTask resume];
+}
+
+
+
 
 + (void)httpsDownLoadWithUrl:(NSString *)urlString andProgressBlock:(void (^)(float))progressBlock andSavePathBlock:(NSURL *(^)(NSURL *, NSURLResponse *))savePathBlock andFinishBlock:(void (^)())finishBlock
 {
-//    NSString *filePath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)lastObject];
-//    return [NSURL fileURLWithPath:filePath]; // 返回的是文件存放在本地沙盒的地址
+    //    NSString *filePath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)lastObject];
+    //    return [NSURL fileURLWithPath:filePath]; // 返回的是文件存放在本地沙盒的地址
     
     // 1.创建管理者对象
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
@@ -270,7 +326,7 @@ static NSInteger const kTimeOutInterval = 20;
 
 
 
-@implementation YHResponseObj
+@implementation RequestResultObj
 
 
 
