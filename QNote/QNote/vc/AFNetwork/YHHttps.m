@@ -158,6 +158,8 @@ static NSInteger const kTimeOutInterval = 20;
     
     NSError *serializationError = nil;
     NSMutableURLRequest *request = [manager.requestSerializer requestWithMethod:@"POST" URLString:url parameters:@{} error:&serializationError];
+    
+    //在这里面可以重新对request进行处理 看自己的需求
     [request setHTTPBody:postData];
     
     if (serializationError) {

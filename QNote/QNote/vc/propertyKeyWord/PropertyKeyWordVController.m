@@ -31,6 +31,8 @@
 @property (nonatomic, strong, nullable) NSObject * obj7;
 @property (nonatomic, strong) NSObject * __nullable obj8;
 
+@property (nonatomic, unsafe_unretained) NSObject * obj10;
+@property (nonatomic, unsafe_unretained) NSInteger obj11;
 
 @end
 
@@ -117,9 +119,9 @@
     
     
     
-    
-    
-    
+    __weak typeof(&*self)weakSelf = self;
+    __unsafe_unretained typeof(&*self)weakSelf1 = self;
+    __weak typeof(&*_obj1)weakObj1 = _obj1;
     
 }
 
