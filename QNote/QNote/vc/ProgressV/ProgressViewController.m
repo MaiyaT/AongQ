@@ -89,7 +89,7 @@
     
     
     
-    UISlider * sliderV = [[UISlider alloc] initWithFrame:CGRectMake(10, 300, CGRectGetWidth(self.view.frame)-20, 20)];
+    UISlider * sliderV = [[UISlider alloc] initWithFrame:CGRectMake(50, 300, CGRectGetWidth(self.view.frame)-100, 20)];
     [sliderV addTarget:self action:@selector(sliderEvent:) forControlEvents:UIControlEventValueChanged];
     sliderV.maximumValue = 1;
     [self.view addSubview:sliderV];
