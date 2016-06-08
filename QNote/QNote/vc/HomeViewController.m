@@ -25,6 +25,8 @@
     
     self.dataList = [[NSMutableArray alloc] init];
     
+    [self.dataList addObject:@{@"title":@"ProgressV",@"subtitle":@"2016-6-7",@"vc":@"ProgressViewController"}];
+    
     [self.dataList addObject:@{@"title":@"AFNetworking—学习",@"subtitle":@"2016-6-4__框架学习",@"vc":@"AFNetworkingNoteVC"}];
     
     [self.dataList addObject:@{@"title":@"AFNetworking—demo",@"subtitle":@"2016-6-4__AFNDemo",@"vc":@"AFNetworkingViewController"}];

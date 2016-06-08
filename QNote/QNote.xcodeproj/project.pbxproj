@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A1566361D06F04E0011035F /* ProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1566351D06F04E0011035F /* ProgressViewController.m */; };
 		7A2BAE421D0004D700D0F967 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2BAE411D0004D700D0F967 /* main.m */; };
 		7A2BAE451D0004D700D0F967 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2BAE441D0004D700D0F967 /* AppDelegate.m */; };
 		7A2BAE4B1D0004D700D0F967 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A2BAE491D0004D700D0F967 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 		7A3C0EAE1D025AB900BD9832 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3C0EAD1D025AB900BD9832 /* BaseViewController.m */; };
 		7A3C0EB21D025FDD00BD9832 /* AFNetworkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3C0EB11D025FDD00BD9832 /* AFNetworkingViewController.m */; };
 		7A3C0EB61D02615B00BD9832 /* AFNTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3C0EB51D02615B00BD9832 /* AFNTableViewCell.m */; };
+		7A83EAEE1D07BF94002A4675 /* YHProgressCutDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A83EAED1D07BF94002A4675 /* YHProgressCutDownView.m */; };
 		7A86835C1D0579D3006F0ECD /* YHHttps.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A86835B1D0579D3006F0ECD /* YHHttps.m */; };
 		7A9DF3FD1D0296E7002B4BA4 /* AFNPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9DF3FC1D0296E7002B4BA4 /* AFNPost.m */; };
 		7A9DF4001D0296F1002B4BA4 /* AFNUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9DF3FF1D0296F1002B4BA4 /* AFNUser.m */; };
@@ -27,12 +29,15 @@
 		7A9DF4071D041A54002B4BA4 /* AFAppDotNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9DF4061D041A54002B4BA4 /* AFAppDotNetAPIClient.m */; };
 		7A9DF40A1D0450E5002B4BA4 /* AFNetworkingNoteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9DF4091D0450E5002B4BA4 /* AFNetworkingNoteVC.m */; };
 		7AA8CE291D00694000669047 /* SecureObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA8CE281D00694000669047 /* SecureObj.m */; };
+		7AF14CDC1D07AF0700FA3A13 /* YHProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF14CDB1D07AF0700FA3A13 /* YHProgressView.m */; };
 		D91CFD6BADD5D1B19F92DCAA /* libPods-QNote.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C83ECE2705A2147CB772435 /* libPods-QNote.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2D04A53866E2B73E5A439451 /* Pods-QNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QNote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QNote/Pods-QNote.debug.xcconfig"; sourceTree = "<group>"; };
 		6C83ECE2705A2147CB772435 /* libPods-QNote.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QNote.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A1566341D06F04E0011035F /* ProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressViewController.h; sourceTree = "<group>"; };
+		7A1566351D06F04E0011035F /* ProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressViewController.m; sourceTree = "<group>"; };
 		7A2BAE3D1D0004D700D0F967 /* QNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A2BAE411D0004D700D0F967 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7A2BAE431D0004D700D0F967 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -57,6 +62,8 @@
 		7A3C0EB11D025FDD00BD9832 /* AFNetworkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingViewController.m; sourceTree = "<group>"; };
 		7A3C0EB41D02615B00BD9832 /* AFNTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNTableViewCell.h; sourceTree = "<group>"; };
 		7A3C0EB51D02615B00BD9832 /* AFNTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNTableViewCell.m; sourceTree = "<group>"; };
+		7A83EAEC1D07BF94002A4675 /* YHProgressCutDownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHProgressCutDownView.h; sourceTree = "<group>"; };
+		7A83EAED1D07BF94002A4675 /* YHProgressCutDownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHProgressCutDownView.m; sourceTree = "<group>"; };
 		7A86835A1D0579D3006F0ECD /* YHHttps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHHttps.h; sourceTree = "<group>"; };
 		7A86835B1D0579D3006F0ECD /* YHHttps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHHttps.m; sourceTree = "<group>"; };
 		7A9DF3FB1D0296E7002B4BA4 /* AFNPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNPost.h; sourceTree = "<group>"; };
@@ -71,6 +78,8 @@
 		7A9DF4091D0450E5002B4BA4 /* AFNetworkingNoteVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingNoteVC.m; sourceTree = "<group>"; };
 		7AA8CE271D00694000669047 /* SecureObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecureObj.h; sourceTree = "<group>"; };
 		7AA8CE281D00694000669047 /* SecureObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecureObj.m; sourceTree = "<group>"; };
+		7AF14CDA1D07AF0700FA3A13 /* YHProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHProgressView.h; sourceTree = "<group>"; };
+		7AF14CDB1D07AF0700FA3A13 /* YHProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHProgressView.m; sourceTree = "<group>"; };
 		86E887FD80964491631D88C4 /* Pods-QNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QNote.release.xcconfig"; path = "Pods/Target Support Files/Pods-QNote/Pods-QNote.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +101,19 @@
 				6C83ECE2705A2147CB772435 /* libPods-QNote.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A1566331D06F0420011035F /* ProgressV */ = {
+			isa = PBXGroup;
+			children = (
+				7A1566341D06F04E0011035F /* ProgressViewController.h */,
+				7A1566351D06F04E0011035F /* ProgressViewController.m */,
+				7AF14CDA1D07AF0700FA3A13 /* YHProgressView.h */,
+				7AF14CDB1D07AF0700FA3A13 /* YHProgressView.m */,
+				7A83EAEC1D07BF94002A4675 /* YHProgressCutDownView.h */,
+				7A83EAED1D07BF94002A4675 /* YHProgressCutDownView.m */,
+			);
+			path = ProgressV;
 			sourceTree = "<group>";
 		};
 		7A2BAE341D0004D700D0F967 = {
@@ -139,6 +161,7 @@
 		7A2BAE5A1D00059A00D0F967 /* vc */ = {
 			isa = PBXGroup;
 			children = (
+				7A1566331D06F0420011035F /* ProgressV */,
 				7A9DF4011D02BF0A002B4BA4 /* valueForKeyPath */,
 				7A3C0EAF1D025FC900BD9832 /* AFNetwork */,
 				7A3C0EAB1D025AA700BD9832 /* base */,
@@ -399,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A3C0EB61D02615B00BD9832 /* AFNTableViewCell.m in Sources */,
+				7A1566361D06F04E0011035F /* ProgressViewController.m in Sources */,
 				7A2DED191D01B7EC003E4B07 /* PropertyKeyWordVController.m in Sources */,
 				7A3C0EAE1D025AB900BD9832 /* BaseViewController.m in Sources */,
 				7A2BAE451D0004D700D0F967 /* AppDelegate.m in Sources */,
@@ -408,12 +432,14 @@
 				7A2BAE421D0004D700D0F967 /* main.m in Sources */,
 				7A3C0EB21D025FDD00BD9832 /* AFNetworkingViewController.m in Sources */,
 				7A9DF3FD1D0296E7002B4BA4 /* AFNPost.m in Sources */,
+				7A83EAEE1D07BF94002A4675 /* YHProgressCutDownView.m in Sources */,
 				7AA8CE291D00694000669047 /* SecureObj.m in Sources */,
 				7A2BAE621D000C2700D0F967 /* HomeTableViewCell.m in Sources */,
 				7A2BAE661D00210E00D0F967 /* SecureCodingViewController.m in Sources */,
 				7A2BAE5E1D0005AD00D0F967 /* HomeViewController.m in Sources */,
 				7A9DF40A1D0450E5002B4BA4 /* AFNetworkingNoteVC.m in Sources */,
 				7A9DF4071D041A54002B4BA4 /* AFAppDotNetAPIClient.m in Sources */,
+				7AF14CDC1D07AF0700FA3A13 /* YHProgressView.m in Sources */,
 				7A9DF4041D02BF18002B4BA4 /* ValueForKeyPathViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
