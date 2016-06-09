@@ -10,29 +10,51 @@
 
 @interface YHProgressView : UIView
 
-
+/**
+ *  圆环半径
+ */
 @property (nonatomic, assign) CGFloat radius;
+
+/**
+ *  进度路劲粗细
+ */
 @property (nonatomic, assign) CGFloat strokeThickness;
-@property (nonatomic, strong) UIColor *strokeColor;
+
+/**
+ *  路劲颜色
+ */
+@property (nonatomic, strong) UIColor * strokeColor;
+
+/**
+ *  路劲的终点位置 设置这个可以直接更新视图 自动动画
+ */
 @property (nonatomic, assign) CGFloat strokeEnd;
-//@property (nonatomic, assign) CGFloat strokeStart;
 
-
+/**
+ *  路劲头部点的颜色
+ */
 @property (nonatomic, strong) UIColor * pointColor;
 
-@property (nonatomic, assign) CGSize pointSize;
+/**
+ *  头部点的大小
+ */
+@property (nonatomic, assign) CGFloat pointRadius;
 
+/**
+ *  路径线条的背景色
+ */
 @property (nonatomic, strong) UIColor * strokeBackgroundColor;
 
 
-@property (nonatomic, strong, readonly) CAShapeLayer *ringAnimatedLayer;
-
 
 /**
- *  起始进度的位置  M_PI
+ *  初始路劲起点的位置  M_PI 弧度值
  */
 @property (nonatomic, assign) CGFloat strokeStartOffset;
 
+/**
+ *  重绘 路劲线条 移除再添加
+ */
 - (void)reBuildCircleLayer;
 
 @end

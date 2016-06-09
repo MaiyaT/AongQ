@@ -10,11 +10,12 @@
 
 @interface YHProgressView()
 
-@property (nonatomic, strong, readwrite) CAShapeLayer *ringAnimatedLayer;
+@property (nonatomic, strong) CAShapeLayer *ringAnimatedLayer;
 
 @property (nonatomic, strong) CAShapeLayer *pointAnimatedLayer;
 
 @property (nonatomic, strong) CAShapeLayer *bgLineAnimatedLayer;
+
 
 @end
 
@@ -73,10 +74,13 @@
     [self updateOffsetStart];
 }
 
+/**
+ *  圆环旋转多少度角
+ */
 - (void)updateOffsetStart
 {
-    self.ringAnimatedLayer.transform = CATransform3DMakeRotation(M_PI, 0, 0, 1);
-    self.pointAnimatedLayer.transform = CATransform3DMakeRotation(M_PI, 0, 0, 1);
+    self.ringAnimatedLayer.transform = CATransform3DMakeRotation(self.strokeStartOffset, 0, 0, 1);
+    self.pointAnimatedLayer.transform = CATransform3DMakeRotation(self.strokeStartOffset, 0, 0, 1);
 }
 
 - (CAShapeLayer*)ringAnimatedLayer
@@ -101,7 +105,7 @@
 - (CAShapeLayer*)pointAnimatedLayer
 {
     if(!_pointAnimatedLayer) {
-        CGPoint arcCenter = CGPointMake(self.radius+self.pointSize.width/2+5, self.radius+self.pointSize.width/2+5);
+        CGPoint arcCenter = CGPointMake(self.radius+self.pointRadius/2+5, self.radius+self.pointRadius/2+5);
         UIBezierPath* smoothedPath = [UIBezierPath bezierPathWithArcCenter:arcCenter radius:self.radius startAngle:(CGFloat)-M_PI_2 endAngle:(CGFloat) (M_PI + M_PI_2) clockwise:YES];
         
         _pointAnimatedLayer = [CAShapeLayer layer];
@@ -109,7 +113,7 @@
         _pointAnimatedLayer.frame = CGRectMake(0.0f, 0.0f, arcCenter.x*2, arcCenter.y*2);
         _pointAnimatedLayer.fillColor = [UIColor clearColor].CGColor;
         _pointAnimatedLayer.strokeColor = self.pointColor.CGColor;
-        _pointAnimatedLayer.lineWidth = self.pointSize.width;
+        _pointAnimatedLayer.lineWidth = self.pointRadius;
         _pointAnimatedLayer.lineCap = kCALineCapRound;
         _pointAnimatedLayer.lineJoin = kCALineJoinBevel;
         _pointAnimatedLayer.path = smoothedPath.CGPath;
@@ -149,11 +153,11 @@
     _pointAnimatedLayer.strokeColor = pointColor.CGColor;
 }
 
--(void)setPointSize:(CGSize)pointSize
+-(void)setPointRadius:(CGFloat)pointRadius
 {
-    _pointSize = pointSize;
+    _pointRadius = pointRadius;
     
-    _pointAnimatedLayer.lineWidth = pointSize.width;
+    _pointAnimatedLayer.lineWidth = pointRadius;
 }
 
 - (void)setStrokeColor:(UIColor*)strokeColor {
@@ -172,26 +176,21 @@
     
     _ringAnimatedLayer.strokeEnd = _strokeEnd;
     
-    float girth = 2*M_PI*self.radius;
-    float offsetProgress = self.pointSize.width*0.5*0.5/girth;
+    //周长
+//    float girth = 2*M_PI*self.radius;
+    
+    //计算这个point的start和end所占用这个角弧度值
+    //余弦定理  cosc = (a*a + b*b - c*c)/(2*a*b);
+    float radian = cosf((self.radius*self.radius+self.radius*self.radius - (self.pointRadius*2)*(self.pointRadius*2)))/(2*self.radius*self.radius);
+    
+    //头部点所占路劲的周长
+    float offsetProgress = radian/(M_PI*2);
+    
     
     _pointAnimatedLayer.strokeStart = _strokeEnd-offsetProgress;
     _pointAnimatedLayer.strokeEnd = MIN(_strokeEnd, 1);
 }
 
-
-//- (void)setStrokeStart:(CGFloat)strokeStart
-//{
-//    _strokeStart = strokeStart;
-//    
-//    _ringAnimatedLayer.strokeStart = strokeStart;
-//    
-//    float girth = 2*M_PI*self.radius;
-//    float offsetProgress = self.pointSize.width*0.5*0.5/girth;
-//    
-//    _pointAnimatedLayer.strokeStart = strokeStart-offsetProgress;
-//    _pointAnimatedLayer.strokeEnd = MIN(strokeStart, 1);
-//}
 
 -(void)setStrokeStartOffset:(CGFloat)strokeStartOffset
 {

@@ -30,6 +30,8 @@
     
     self.dataList = [[NSMutableArray alloc] init];
     
+    [self.dataList addObject:@{@"title":@"UIBezierPath",@"subtitle":@"2016-6-9",@"vc":@"BezierViewController"}];
+    
     [self.dataList addObject:@{@"title":@"CAShapeLayer-Progress",@"subtitle":@"2016-6-7",@"vc":@"ProgressViewController"}];
     
     [self.dataList addObject:@{@"title":@"AFNetworking—学习",@"subtitle":@"2016-6-4__框架学习",@"vc":@"AFNetworkingNoteVC"}];
