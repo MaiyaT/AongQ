@@ -31,6 +31,7 @@
 		7AA8CE291D00694000669047 /* SecureObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA8CE281D00694000669047 /* SecureObj.m */; };
 		7AF14CDC1D07AF0700FA3A13 /* YHProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF14CDB1D07AF0700FA3A13 /* YHProgressView.m */; };
 		7AF3CA1E1D0907EB008DB045 /* BezierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF3CA1D1D0907EB008DB045 /* BezierViewController.m */; };
+		7AF3CA211D09BD7B008DB045 /* BezierLineV.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF3CA201D09BD7B008DB045 /* BezierLineV.m */; };
 		D91CFD6BADD5D1B19F92DCAA /* libPods-QNote.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C83ECE2705A2147CB772435 /* libPods-QNote.a */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +84,8 @@
 		7AF14CDB1D07AF0700FA3A13 /* YHProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHProgressView.m; sourceTree = "<group>"; };
 		7AF3CA1C1D0907EB008DB045 /* BezierViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierViewController.h; sourceTree = "<group>"; };
 		7AF3CA1D1D0907EB008DB045 /* BezierViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierViewController.m; sourceTree = "<group>"; };
+		7AF3CA1F1D09BD7B008DB045 /* BezierLineV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierLineV.h; sourceTree = "<group>"; };
+		7AF3CA201D09BD7B008DB045 /* BezierLineV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierLineV.m; sourceTree = "<group>"; };
 		86E887FD80964491631D88C4 /* Pods-QNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QNote.release.xcconfig"; path = "Pods/Target Support Files/Pods-QNote/Pods-QNote.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -300,6 +303,8 @@
 			children = (
 				7AF3CA1C1D0907EB008DB045 /* BezierViewController.h */,
 				7AF3CA1D1D0907EB008DB045 /* BezierViewController.m */,
+				7AF3CA1F1D09BD7B008DB045 /* BezierLineV.h */,
+				7AF3CA201D09BD7B008DB045 /* BezierLineV.m */,
 			);
 			path = Bezier;
 			sourceTree = "<group>";
@@ -437,6 +442,7 @@
 				7A3C0EB61D02615B00BD9832 /* AFNTableViewCell.m in Sources */,
 				7A1566361D06F04E0011035F /* ProgressViewController.m in Sources */,
 				7AF3CA1E1D0907EB008DB045 /* BezierViewController.m in Sources */,
+				7AF3CA211D09BD7B008DB045 /* BezierLineV.m in Sources */,
 				7A2DED191D01B7EC003E4B07 /* PropertyKeyWordVController.m in Sources */,
 				7A3C0EAE1D025AB900BD9832 /* BaseViewController.m in Sources */,
 				7A2BAE451D0004D700D0F967 /* AppDelegate.m in Sources */,

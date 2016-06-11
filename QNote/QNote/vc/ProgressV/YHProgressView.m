@@ -114,6 +114,7 @@
         _pointAnimatedLayer.fillColor = [UIColor clearColor].CGColor;
         _pointAnimatedLayer.strokeColor = self.pointColor.CGColor;
         _pointAnimatedLayer.lineWidth = self.pointRadius;
+        //圆角设置
         _pointAnimatedLayer.lineCap = kCALineCapRound;
         _pointAnimatedLayer.lineJoin = kCALineJoinBevel;
         _pointAnimatedLayer.path = smoothedPath.CGPath;
