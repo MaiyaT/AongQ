@@ -74,11 +74,11 @@
     self.curdownView = [[YHProgressCutDownView alloc] initWithFrame:CGRectMake(230, 200, 50, 50)];
 
     self.curdownView.strokeColor = [UIColor blueColor];
-    self.curdownView.strokeThickness = 4;
+    self.curdownView.strokeThickness = 1;
     self.curdownView.radius = 50;
     self.curdownView.strokeEnd = 0.5;
     self.curdownView.pointColor = [UIColor blackColor];
-    self.curdownView.pointRadius = 20;
+    self.curdownView.pointRadius = 4;
     self.curdownView.strokeBackgroundColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.3];
     
     self.curdownView.downTimeTotalInterval = 10;

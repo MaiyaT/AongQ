@@ -32,7 +32,7 @@
 
 -(void)beginTimer
 {
-    [self reBuildCircleLayer];
+//    [self reBuildCircleLayer];
     
     [self endTimer];
     

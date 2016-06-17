@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		7A1566361D06F04E0011035F /* ProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1566351D06F04E0011035F /* ProgressViewController.m */; };
+		7A1AA8751D12D08400F6EB0F /* BezierCurveV.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1AA8741D12D08400F6EB0F /* BezierCurveV.m */; };
+		7A1AA8781D12D31500F6EB0F /* BezierRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1AA8771D12D31500F6EB0F /* BezierRect.m */; };
+		7A1AA87B1D12DB4000F6EB0F /* BezierArc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1AA87A1D12DB4000F6EB0F /* BezierArc.m */; };
+		7A1AA87E1D12DFC100F6EB0F /* BezierTriangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1AA87D1D12DFC100F6EB0F /* BezierTriangle.m */; };
+		7A1AA8811D12E39000F6EB0F /* BezierChatPopV.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1AA8801D12E39000F6EB0F /* BezierChatPopV.m */; };
+		7A1AA8841D12E90100F6EB0F /* BeizerFrameAnimationV.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1AA8831D12E90100F6EB0F /* BeizerFrameAnimationV.m */; };
 		7A2BAE421D0004D700D0F967 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2BAE411D0004D700D0F967 /* main.m */; };
 		7A2BAE451D0004D700D0F967 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2BAE441D0004D700D0F967 /* AppDelegate.m */; };
 		7A2BAE4B1D0004D700D0F967 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A2BAE491D0004D700D0F967 /* Main.storyboard */; };
@@ -40,6 +46,18 @@
 		6C83ECE2705A2147CB772435 /* libPods-QNote.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QNote.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A1566341D06F04E0011035F /* ProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressViewController.h; sourceTree = "<group>"; };
 		7A1566351D06F04E0011035F /* ProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressViewController.m; sourceTree = "<group>"; };
+		7A1AA8731D12D08400F6EB0F /* BezierCurveV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierCurveV.h; sourceTree = "<group>"; };
+		7A1AA8741D12D08400F6EB0F /* BezierCurveV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierCurveV.m; sourceTree = "<group>"; };
+		7A1AA8761D12D31500F6EB0F /* BezierRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierRect.h; sourceTree = "<group>"; };
+		7A1AA8771D12D31500F6EB0F /* BezierRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierRect.m; sourceTree = "<group>"; };
+		7A1AA8791D12DB4000F6EB0F /* BezierArc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierArc.h; sourceTree = "<group>"; };
+		7A1AA87A1D12DB4000F6EB0F /* BezierArc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierArc.m; sourceTree = "<group>"; };
+		7A1AA87C1D12DFC100F6EB0F /* BezierTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierTriangle.h; sourceTree = "<group>"; };
+		7A1AA87D1D12DFC100F6EB0F /* BezierTriangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierTriangle.m; sourceTree = "<group>"; };
+		7A1AA87F1D12E39000F6EB0F /* BezierChatPopV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierChatPopV.h; sourceTree = "<group>"; };
+		7A1AA8801D12E39000F6EB0F /* BezierChatPopV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierChatPopV.m; sourceTree = "<group>"; };
+		7A1AA8821D12E90100F6EB0F /* BeizerFrameAnimationV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeizerFrameAnimationV.h; sourceTree = "<group>"; };
+		7A1AA8831D12E90100F6EB0F /* BeizerFrameAnimationV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeizerFrameAnimationV.m; sourceTree = "<group>"; };
 		7A2BAE3D1D0004D700D0F967 /* QNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A2BAE411D0004D700D0F967 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7A2BAE431D0004D700D0F967 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -305,6 +323,18 @@
 				7AF3CA1D1D0907EB008DB045 /* BezierViewController.m */,
 				7AF3CA1F1D09BD7B008DB045 /* BezierLineV.h */,
 				7AF3CA201D09BD7B008DB045 /* BezierLineV.m */,
+				7A1AA8731D12D08400F6EB0F /* BezierCurveV.h */,
+				7A1AA8741D12D08400F6EB0F /* BezierCurveV.m */,
+				7A1AA8761D12D31500F6EB0F /* BezierRect.h */,
+				7A1AA8771D12D31500F6EB0F /* BezierRect.m */,
+				7A1AA8791D12DB4000F6EB0F /* BezierArc.h */,
+				7A1AA87A1D12DB4000F6EB0F /* BezierArc.m */,
+				7A1AA87C1D12DFC100F6EB0F /* BezierTriangle.h */,
+				7A1AA87D1D12DFC100F6EB0F /* BezierTriangle.m */,
+				7A1AA87F1D12E39000F6EB0F /* BezierChatPopV.h */,
+				7A1AA8801D12E39000F6EB0F /* BezierChatPopV.m */,
+				7A1AA8821D12E90100F6EB0F /* BeizerFrameAnimationV.h */,
+				7A1AA8831D12E90100F6EB0F /* BeizerFrameAnimationV.m */,
 			);
 			path = Bezier;
 			sourceTree = "<group>";
@@ -443,7 +473,9 @@
 				7A1566361D06F04E0011035F /* ProgressViewController.m in Sources */,
 				7AF3CA1E1D0907EB008DB045 /* BezierViewController.m in Sources */,
 				7AF3CA211D09BD7B008DB045 /* BezierLineV.m in Sources */,
+				7A1AA8841D12E90100F6EB0F /* BeizerFrameAnimationV.m in Sources */,
 				7A2DED191D01B7EC003E4B07 /* PropertyKeyWordVController.m in Sources */,
+				7A1AA8811D12E39000F6EB0F /* BezierChatPopV.m in Sources */,
 				7A3C0EAE1D025AB900BD9832 /* BaseViewController.m in Sources */,
 				7A2BAE451D0004D700D0F967 /* AppDelegate.m in Sources */,
 				7A9DF4001D0296F1002B4BA4 /* AFNUser.m in Sources */,
@@ -451,6 +483,7 @@
 				7A86835C1D0579D3006F0ECD /* YHHttps.m in Sources */,
 				7A2BAE421D0004D700D0F967 /* main.m in Sources */,
 				7A3C0EB21D025FDD00BD9832 /* AFNetworkingViewController.m in Sources */,
+				7A1AA87B1D12DB4000F6EB0F /* BezierArc.m in Sources */,
 				7A9DF3FD1D0296E7002B4BA4 /* AFNPost.m in Sources */,
 				7A83EAEE1D07BF94002A4675 /* YHProgressCutDownView.m in Sources */,
 				7AA8CE291D00694000669047 /* SecureObj.m in Sources */,
@@ -458,8 +491,11 @@
 				7A2BAE661D00210E00D0F967 /* SecureCodingViewController.m in Sources */,
 				7A2BAE5E1D0005AD00D0F967 /* HomeViewController.m in Sources */,
 				7A9DF40A1D0450E5002B4BA4 /* AFNetworkingNoteVC.m in Sources */,
+				7A1AA8751D12D08400F6EB0F /* BezierCurveV.m in Sources */,
 				7A9DF4071D041A54002B4BA4 /* AFAppDotNetAPIClient.m in Sources */,
+				7A1AA87E1D12DFC100F6EB0F /* BezierTriangle.m in Sources */,
 				7AF14CDC1D07AF0700FA3A13 /* YHProgressView.m in Sources */,
+				7A1AA8781D12D31500F6EB0F /* BezierRect.m in Sources */,
 				7A9DF4041D02BF18002B4BA4 /* ValueForKeyPathViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

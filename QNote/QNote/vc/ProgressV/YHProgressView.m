@@ -187,6 +187,7 @@
     //头部点所占路劲的周长
     float offsetProgress = radian/(M_PI*2);
     
+    offsetProgress = MAX(offsetProgress, 0.001);
     
     _pointAnimatedLayer.strokeStart = _strokeEnd-offsetProgress;
     _pointAnimatedLayer.strokeEnd = MIN(_strokeEnd, 1);
