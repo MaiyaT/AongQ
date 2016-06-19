@@ -27,6 +27,7 @@
 		7A3C0EAE1D025AB900BD9832 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3C0EAD1D025AB900BD9832 /* BaseViewController.m */; };
 		7A3C0EB21D025FDD00BD9832 /* AFNetworkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3C0EB11D025FDD00BD9832 /* AFNetworkingViewController.m */; };
 		7A3C0EB61D02615B00BD9832 /* AFNTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3C0EB51D02615B00BD9832 /* AFNTableViewCell.m */; };
+		7A6C711C1D165C3F00BC5134 /* katong.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A6C711B1D165C3F00BC5134 /* katong.jpg */; };
 		7A83EAEE1D07BF94002A4675 /* YHProgressCutDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A83EAED1D07BF94002A4675 /* YHProgressCutDownView.m */; };
 		7A86835C1D0579D3006F0ECD /* YHHttps.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A86835B1D0579D3006F0ECD /* YHHttps.m */; };
 		7A9DF3FD1D0296E7002B4BA4 /* AFNPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9DF3FC1D0296E7002B4BA4 /* AFNPost.m */; };
@@ -82,6 +83,7 @@
 		7A3C0EB11D025FDD00BD9832 /* AFNetworkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingViewController.m; sourceTree = "<group>"; };
 		7A3C0EB41D02615B00BD9832 /* AFNTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNTableViewCell.h; sourceTree = "<group>"; };
 		7A3C0EB51D02615B00BD9832 /* AFNTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNTableViewCell.m; sourceTree = "<group>"; };
+		7A6C711B1D165C3F00BC5134 /* katong.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = katong.jpg; sourceTree = "<group>"; };
 		7A83EAEC1D07BF94002A4675 /* YHProgressCutDownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHProgressCutDownView.h; sourceTree = "<group>"; };
 		7A83EAED1D07BF94002A4675 /* YHProgressCutDownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHProgressCutDownView.m; sourceTree = "<group>"; };
 		7A86835A1D0579D3006F0ECD /* YHHttps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHHttps.h; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				7A2BAE441D0004D700D0F967 /* AppDelegate.m */,
 				7A2BAE491D0004D700D0F967 /* Main.storyboard */,
 				7A2BAE4C1D0004D700D0F967 /* Assets.xcassets */,
+				7A6C711B1D165C3F00BC5134 /* katong.jpg */,
 				7A2BAE4E1D0004D700D0F967 /* LaunchScreen.storyboard */,
 				7A2BAE511D0004D700D0F967 /* Info.plist */,
 				7A2BAE401D0004D700D0F967 /* Supporting Files */,
@@ -409,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A2BAE501D0004D700D0F967 /* LaunchScreen.storyboard in Resources */,
+				7A6C711C1D165C3F00BC5134 /* katong.jpg in Resources */,
 				7A2BAE4D1D0004D700D0F967 /* Assets.xcassets in Resources */,
 				7A2BAE4B1D0004D700D0F967 /* Main.storyboard in Resources */,
 			);
