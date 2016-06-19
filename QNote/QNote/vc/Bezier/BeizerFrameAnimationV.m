@@ -9,7 +9,9 @@
 #import "BeizerFrameAnimationV.h"
 
 /**
- *  参考 http://www.jianshu.com/p/4824fc4ce4b0
+ *  参考
+ *  http://www.jianshu.com/p/4824fc4ce4b0
+ *  http://www.jianshu.com/p/daa58c99ee1e
  */
 @implementation BeizerFrameAnimationV
 

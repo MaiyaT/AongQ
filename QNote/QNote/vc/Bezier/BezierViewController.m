@@ -63,8 +63,8 @@
    
     NSMutableArray * bezierViews = [[NSMutableArray alloc] init];
     
-    for(NSDictionary * dataDic in [list reverseObjectEnumerator])
-//    for(NSDictionary * dataDic in list)
+//    for(NSDictionary * dataDic in [list reverseObjectEnumerator])
+    for(NSDictionary * dataDic in list)
     {
         UIView * subV = [self bezierElementViewWithDic:dataDic];
         [scrollV addSubview:subV];
