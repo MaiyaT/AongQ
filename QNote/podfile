@@ -9,5 +9,6 @@ pod 'Masonry'
 pod 'AFNetworking'
 pod 'MJRefresh'
 pod 'SVProgressHUD'
+pod 'JSPatch'
 
 end

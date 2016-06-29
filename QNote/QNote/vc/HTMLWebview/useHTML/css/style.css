@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS reset */
+html{color:#1a1a1a;background:#f4f4f4;font-size: 12px;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td,strong{padding:0;margin:0;}
+table{border-collapse:collapse;border-spacing:0;}
+em,i,strong {font-style: normal;}
+li{list-style:none;}
+fieldset,img{border:0;}
+input {border: none;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+input,textarea {border: 0;outline: none;background: none;color:#d1d1d1;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-modify:read-write-plaintext-only;}
+*{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+a{text-decoration:none; color:#1a1a1a; outline:none;}/*此处待添加默认链接颜色*/
+.clearfix:after {content: "\200B";display: block;height: 0;overflow: hidden;clear: both;}
+.clearfix {*zoom: 1;}
+/*自定义*/
+a{ text-decoration: none; outline: none; }
+
+@media screen and (min-width:319px){
+    body,html {
+        font-size: 12px;
+    }
+}
+@media screen and (min-width:346px){
+    body,html {
+        font-size: 13.3px;
+    }
+}
+@media screen and (min-width:359px){
+    body,html {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width:374px){
+    body,html {
+        font-size: 14.4px;
+    }
+}
+@media screen and (min-width:400px){
+    body,html {
+        font-size: 15px;
+    }
+}
+@media screen and (min-width:413px){
+    body,html {
+        font-size: 15.8px;
+    }
+}
+@media screen and (min-width:426px){
+    body,html {
+        font-size: 16.3px;
+    }
+}
+/*公共头尾部分*/
+html,body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.wrap{
+	position:relative;
+    padding-top:1rem;
+	margin:0 auto;
+	min-width:320px;
+	max-width:640px;
+}
+/*使用帮助列表*/
+.use-list {
+    background: #fff;
+    border: 1px solid #e7e7e7;
+    border-width: 1px 0 1px 0;
+}
+.use-list li {
+    position: relative;
+    margin-left: 1rem;
+    line-height: 3.75rem;
+    font-size: 1.2rem;
+    border-top: 1px solid #e7e7e7;
+}
+.use-list li a {
+    display: block;
+    padding-left:1rem;
+}
+.use-list li:first-child {
+    border: none;
+}
+.use-list li:before {
+    position: absolute;
+    content: "";
+    left: .2rem;
+    top: 50%;
+    margin-top: -.18rem;
+    width: 0.36rem;
+    height: 0.36rem;
+    background: #d5d5d5;
+    border-radius: 3rem;
+}
+.use-list li a .enter {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 1rem;
+    margin: auto;
+    width: 1rem;
+    height: 1rem;
+    background: url('../img/enter_icon.png') center no-repeat;
+    background-size: contain;
+}
+.use-list li a:active {
+    background: #f3f3f3;
+}
+/*使用帮助详情*/
+.use-item {
+    padding-bottom: 2rem;
+    margin: 0 1rem;
+    border: 1px solid #e7e7e7;
+    background: #ffffff;
+    border-radius: .3rem;
+}
+.use-item dt {
+    position: relative;
+    margin-bottom: 1rem;
+    padding: 0 1rem 0 2rem;
+    height: 4rem;
+    line-height: 4rem;
+    font-size: 1.13rem;
+    border-bottom: 1px solid #e7e7e7;
+}
+.use-item .icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0.63rem;
+    margin: auto;
+    width: 0.9rem;
+    height: 0.9rem;
+    background: url('../img/item_icon.png') center no-repeat;
+    background-size: contain;
+}
+.use-item dd {
+    margin-bottom: .5rem;
+    padding: 0 1rem;
+    color: #898989;
+    font-size: 1.05rem;
+    line-height: 1.5rem;
+}
