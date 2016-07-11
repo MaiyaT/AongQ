@@ -17,13 +17,23 @@ PODS:
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
-  - JSPatch (1.0):
-    - JSPatch/Core (= 1.0)
-  - JSPatch/Core (1.0)
+  - JSPatch (1.1):
+    - JSPatch/Core (= 1.1)
+  - JSPatch/Core (1.1)
   - Masonry (1.0.1)
   - MJRefresh (3.1.9)
   - pop (1.0.9)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
   - SVProgressHUD (2.0.3)
+  - YYKit (1.0.7):
+    - YYKit/no-arc (= 1.0.7)
+  - YYKit/no-arc (1.0.7)
 
 DEPENDENCIES:
   - AFNetworking
@@ -32,17 +42,21 @@ DEPENDENCIES:
   - Masonry
   - MJRefresh
   - pop
+  - ReactiveCocoa
   - SVProgressHUD
+  - YYKit
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
-  JSPatch: c689ea4dde17441f2f4a95d40dfedb8900c20099
+  JSPatch: ade285ad1d8f06146ed6054a39cef87509453299
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   MJRefresh: c5f1f1653e5a1b932c90f78074f2bc86f3f9bd5e
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  YYKit: 843d1b26e20b82c695790c9a89907eaa1e99907f
 
-PODFILE CHECKSUM: d72a2e8c5f122ae59ff15118874c6df7b2cf7909
+PODFILE CHECKSUM: 0725f86c3d5150817494d47f0277fad962355c74
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.0.1

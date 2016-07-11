@@ -10,5 +10,7 @@ pod 'AFNetworking'
 pod 'MJRefresh'
 pod 'SVProgressHUD'
 pod 'JSPatch'
+pod 'YYKit'
+pod 'ReactiveCocoa'
 
 end

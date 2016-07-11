@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A14B2D61D2F517600012E0B /* CoreDataManaged.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A14B2D51D2F517600012E0B /* CoreDataManaged.m */; };
+		7A14B2D91D2FA01800012E0B /* CoreGraphicsExampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A14B2D81D2FA01800012E0B /* CoreGraphicsExampleVC.m */; };
+		7A14B2DC1D2FA19700012E0B /* GraphicsSimple.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A14B2DB1D2FA19700012E0B /* GraphicsSimple.m */; };
 		7A1566361D06F04E0011035F /* ProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1566351D06F04E0011035F /* ProgressViewController.m */; };
 		7A18F3D81D20B7B600662DF8 /* RTObj1.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18F3D71D20B7B600662DF8 /* RTObj1.m */; };
 		7A1AA8751D12D08400F6EB0F /* BezierCurveV.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1AA8741D12D08400F6EB0F /* BezierCurveV.m */; };
@@ -15,6 +18,7 @@
 		7A1AA87E1D12DFC100F6EB0F /* BezierTriangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1AA87D1D12DFC100F6EB0F /* BezierTriangle.m */; };
 		7A1AA8811D12E39000F6EB0F /* BezierChatPopV.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1AA8801D12E39000F6EB0F /* BezierChatPopV.m */; };
 		7A1AA8841D12E90100F6EB0F /* BeizerFrameAnimationV.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1AA8831D12E90100F6EB0F /* BeizerFrameAnimationV.m */; };
+		7A2A23181D2A47130092BFB9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A2A23171D2A47130092BFB9 /* CoreGraphics.framework */; };
 		7A2BAE421D0004D700D0F967 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2BAE411D0004D700D0F967 /* main.m */; };
 		7A2BAE451D0004D700D0F967 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2BAE441D0004D700D0F967 /* AppDelegate.m */; };
 		7A2BAE4B1D0004D700D0F967 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A2BAE491D0004D700D0F967 /* Main.storyboard */; };
@@ -25,13 +29,19 @@
 		7A2BAE661D00210E00D0F967 /* SecureCodingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2BAE651D00210E00D0F967 /* SecureCodingViewController.m */; };
 		7A2DED191D01B7EC003E4B07 /* PropertyKeyWordVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2DED181D01B7EC003E4B07 /* PropertyKeyWordVController.m */; };
 		7A2DED1D1D01E14E003E4B07 /* MathFuntionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2DED1C1D01E14E003E4B07 /* MathFuntionViewController.m */; };
+		7A3B6A821D2691C90086897D /* YYKitModelVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3B6A811D2691C90086897D /* YYKitModelVController.m */; };
 		7A3C0EAE1D025AB900BD9832 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3C0EAD1D025AB900BD9832 /* BaseViewController.m */; };
 		7A3C0EB21D025FDD00BD9832 /* AFNetworkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3C0EB11D025FDD00BD9832 /* AFNetworkingViewController.m */; };
 		7A3C0EB61D02615B00BD9832 /* AFNTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3C0EB51D02615B00BD9832 /* AFNTableViewCell.m */; };
+		7A6489471D2CABE6004D6501 /* SignInService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6489461D2CABE6004D6501 /* SignInService.m */; };
+		7A64894A1D2CEC3B004D6501 /* NSObject+Caculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6489491D2CEC3B004D6501 /* NSObject+Caculator.m */; };
 		7A6857901D1B6DE300D855A1 /* HTMLWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A68578F1D1B6DE300D855A1 /* HTMLWebViewController.m */; };
 		7A6857AF1D1B6E7300D855A1 /* useHTML in Resources */ = {isa = PBXBuildFile; fileRef = 7A6857AE1D1B6E7300D855A1 /* useHTML */; };
 		7A6857B91D1B7EF700D855A1 /* RunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6857B81D1B7EF700D855A1 /* RunTimeViewController.m */; };
 		7A6857BC1D1B8F5200D855A1 /* RTObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6857BB1D1B8F5200D855A1 /* RTObj.m */; };
+		7A6916F41D2B499800265FF1 /* CoreFoundationExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6916F31D2B499800265FF1 /* CoreFoundationExample.m */; };
+		7A6916F61D2B4AC500265FF1 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6916F51D2B4AC500265FF1 /* CoreFoundation.framework */; };
+		7A6916FA1D2B8DA800265FF1 /* UIControlExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6916F91D2B8DA800265FF1 /* UIControlExample.m */; };
 		7A6C711C1D165C3F00BC5134 /* katong.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A6C711B1D165C3F00BC5134 /* katong.jpg */; };
 		7A83EAEE1D07BF94002A4675 /* YHProgressCutDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A83EAED1D07BF94002A4675 /* YHProgressCutDownView.m */; };
 		7A86835C1D0579D3006F0ECD /* YHHttps.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A86835B1D0579D3006F0ECD /* YHHttps.m */; };
@@ -40,7 +50,13 @@
 		7A9DF4041D02BF18002B4BA4 /* ValueForKeyPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9DF4031D02BF18002B4BA4 /* ValueForKeyPathViewController.m */; };
 		7A9DF4071D041A54002B4BA4 /* AFAppDotNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9DF4061D041A54002B4BA4 /* AFAppDotNetAPIClient.m */; };
 		7A9DF40A1D0450E5002B4BA4 /* AFNetworkingNoteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9DF4091D0450E5002B4BA4 /* AFNetworkingNoteVC.m */; };
+		7AA5777F1D2E37300007F822 /* ReactiveTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA5777E1D2E37300007F822 /* ReactiveTwoViewController.m */; };
+		7AA577811D2E55B10007F822 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA577801D2E55B10007F822 /* CoreData.framework */; };
+		7AA577851D2E57FA0007F822 /* CoreDataExampleVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA577841D2E57FA0007F822 /* CoreDataExampleVController.m */; };
+		7AA577881D2E592D0007F822 /* CoreDataModle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7AA577861D2E592D0007F822 /* CoreDataModle.xcdatamodeld */; };
+		7AA5778E1D2E59DA0007F822 /* CDObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA5778D1D2E59DA0007F822 /* CDObj.m */; };
 		7AA8CE291D00694000669047 /* SecureObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA8CE281D00694000669047 /* SecureObj.m */; };
+		7AC2946F1D2BA63C00341ED6 /* ReactiveCocoaExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC2946E1D2BA63C00341ED6 /* ReactiveCocoaExample.m */; };
 		7AF14CDC1D07AF0700FA3A13 /* YHProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF14CDB1D07AF0700FA3A13 /* YHProgressView.m */; };
 		7AF3CA1E1D0907EB008DB045 /* BezierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF3CA1D1D0907EB008DB045 /* BezierViewController.m */; };
 		7AF3CA211D09BD7B008DB045 /* BezierLineV.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF3CA201D09BD7B008DB045 /* BezierLineV.m */; };
@@ -50,6 +66,12 @@
 /* Begin PBXFileReference section */
 		2D04A53866E2B73E5A439451 /* Pods-QNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QNote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QNote/Pods-QNote.debug.xcconfig"; sourceTree = "<group>"; };
 		6C83ECE2705A2147CB772435 /* libPods-QNote.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QNote.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A14B2D41D2F517600012E0B /* CoreDataManaged.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManaged.h; sourceTree = "<group>"; };
+		7A14B2D51D2F517600012E0B /* CoreDataManaged.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManaged.m; sourceTree = "<group>"; };
+		7A14B2D71D2FA01800012E0B /* CoreGraphicsExampleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreGraphicsExampleVC.h; sourceTree = "<group>"; };
+		7A14B2D81D2FA01800012E0B /* CoreGraphicsExampleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsExampleVC.m; sourceTree = "<group>"; };
+		7A14B2DA1D2FA19700012E0B /* GraphicsSimple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicsSimple.h; sourceTree = "<group>"; };
+		7A14B2DB1D2FA19700012E0B /* GraphicsSimple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphicsSimple.m; sourceTree = "<group>"; };
 		7A1566341D06F04E0011035F /* ProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressViewController.h; sourceTree = "<group>"; };
 		7A1566351D06F04E0011035F /* ProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressViewController.m; sourceTree = "<group>"; };
 		7A18F3D61D20B7B600662DF8 /* RTObj1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTObj1.h; sourceTree = "<group>"; };
@@ -66,6 +88,7 @@
 		7A1AA8801D12E39000F6EB0F /* BezierChatPopV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierChatPopV.m; sourceTree = "<group>"; };
 		7A1AA8821D12E90100F6EB0F /* BeizerFrameAnimationV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeizerFrameAnimationV.h; sourceTree = "<group>"; };
 		7A1AA8831D12E90100F6EB0F /* BeizerFrameAnimationV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeizerFrameAnimationV.m; sourceTree = "<group>"; };
+		7A2A23171D2A47130092BFB9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		7A2BAE3D1D0004D700D0F967 /* QNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A2BAE411D0004D700D0F967 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7A2BAE431D0004D700D0F967 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -84,12 +107,18 @@
 		7A2DED181D01B7EC003E4B07 /* PropertyKeyWordVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyKeyWordVController.m; sourceTree = "<group>"; };
 		7A2DED1B1D01E14E003E4B07 /* MathFuntionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathFuntionViewController.h; sourceTree = "<group>"; };
 		7A2DED1C1D01E14E003E4B07 /* MathFuntionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathFuntionViewController.m; sourceTree = "<group>"; };
+		7A3B6A801D2691C90086897D /* YYKitModelVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKitModelVController.h; sourceTree = "<group>"; };
+		7A3B6A811D2691C90086897D /* YYKitModelVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYKitModelVController.m; sourceTree = "<group>"; };
 		7A3C0EAC1D025AB900BD9832 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		7A3C0EAD1D025AB900BD9832 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		7A3C0EB01D025FDD00BD9832 /* AFNetworkingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkingViewController.h; sourceTree = "<group>"; };
 		7A3C0EB11D025FDD00BD9832 /* AFNetworkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingViewController.m; sourceTree = "<group>"; };
 		7A3C0EB41D02615B00BD9832 /* AFNTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNTableViewCell.h; sourceTree = "<group>"; };
 		7A3C0EB51D02615B00BD9832 /* AFNTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNTableViewCell.m; sourceTree = "<group>"; };
+		7A6489451D2CABE6004D6501 /* SignInService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInService.h; sourceTree = "<group>"; };
+		7A6489461D2CABE6004D6501 /* SignInService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInService.m; sourceTree = "<group>"; };
+		7A6489481D2CEC3B004D6501 /* NSObject+Caculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Caculator.h"; sourceTree = "<group>"; };
+		7A6489491D2CEC3B004D6501 /* NSObject+Caculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Caculator.m"; sourceTree = "<group>"; };
 		7A68578E1D1B6DE300D855A1 /* HTMLWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLWebViewController.h; sourceTree = "<group>"; };
 		7A68578F1D1B6DE300D855A1 /* HTMLWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLWebViewController.m; sourceTree = "<group>"; };
 		7A6857AE1D1B6E7300D855A1 /* useHTML */ = {isa = PBXFileReference; lastKnownFileType = folder; path = useHTML; sourceTree = "<group>"; };
@@ -97,6 +126,11 @@
 		7A6857B81D1B7EF700D855A1 /* RunTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTimeViewController.m; sourceTree = "<group>"; };
 		7A6857BA1D1B8F5200D855A1 /* RTObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTObj.h; sourceTree = "<group>"; };
 		7A6857BB1D1B8F5200D855A1 /* RTObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTObj.m; sourceTree = "<group>"; };
+		7A6916F21D2B499800265FF1 /* CoreFoundationExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreFoundationExample.h; sourceTree = "<group>"; };
+		7A6916F31D2B499800265FF1 /* CoreFoundationExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreFoundationExample.m; sourceTree = "<group>"; };
+		7A6916F51D2B4AC500265FF1 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		7A6916F81D2B8DA800265FF1 /* UIControlExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIControlExample.h; sourceTree = "<group>"; };
+		7A6916F91D2B8DA800265FF1 /* UIControlExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIControlExample.m; sourceTree = "<group>"; };
 		7A6C711B1D165C3F00BC5134 /* katong.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = katong.jpg; sourceTree = "<group>"; };
 		7A83EAEC1D07BF94002A4675 /* YHProgressCutDownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHProgressCutDownView.h; sourceTree = "<group>"; };
 		7A83EAED1D07BF94002A4675 /* YHProgressCutDownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHProgressCutDownView.m; sourceTree = "<group>"; };
@@ -112,8 +146,18 @@
 		7A9DF4061D041A54002B4BA4 /* AFAppDotNetAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAppDotNetAPIClient.m; sourceTree = "<group>"; };
 		7A9DF4081D0450E5002B4BA4 /* AFNetworkingNoteVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkingNoteVC.h; sourceTree = "<group>"; };
 		7A9DF4091D0450E5002B4BA4 /* AFNetworkingNoteVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingNoteVC.m; sourceTree = "<group>"; };
+		7AA5777D1D2E37300007F822 /* ReactiveTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactiveTwoViewController.h; sourceTree = "<group>"; };
+		7AA5777E1D2E37300007F822 /* ReactiveTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactiveTwoViewController.m; sourceTree = "<group>"; };
+		7AA577801D2E55B10007F822 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7AA577831D2E57FA0007F822 /* CoreDataExampleVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataExampleVController.h; sourceTree = "<group>"; };
+		7AA577841D2E57FA0007F822 /* CoreDataExampleVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataExampleVController.m; sourceTree = "<group>"; };
+		7AA577871D2E592D0007F822 /* CoreDataModle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModle.xcdatamodel; sourceTree = "<group>"; };
+		7AA5778C1D2E59DA0007F822 /* CDObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDObj.h; sourceTree = "<group>"; };
+		7AA5778D1D2E59DA0007F822 /* CDObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDObj.m; sourceTree = "<group>"; };
 		7AA8CE271D00694000669047 /* SecureObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecureObj.h; sourceTree = "<group>"; };
 		7AA8CE281D00694000669047 /* SecureObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecureObj.m; sourceTree = "<group>"; };
+		7AC2946D1D2BA63C00341ED6 /* ReactiveCocoaExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactiveCocoaExample.h; sourceTree = "<group>"; };
+		7AC2946E1D2BA63C00341ED6 /* ReactiveCocoaExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactiveCocoaExample.m; sourceTree = "<group>"; };
 		7AF14CDA1D07AF0700FA3A13 /* YHProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHProgressView.h; sourceTree = "<group>"; };
 		7AF14CDB1D07AF0700FA3A13 /* YHProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHProgressView.m; sourceTree = "<group>"; };
 		7AF3CA1C1D0907EB008DB045 /* BezierViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierViewController.h; sourceTree = "<group>"; };
@@ -128,6 +172,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AA577811D2E55B10007F822 /* CoreData.framework in Frameworks */,
+				7A6916F61D2B4AC500265FF1 /* CoreFoundation.framework in Frameworks */,
+				7A2A23181D2A47130092BFB9 /* CoreGraphics.framework in Frameworks */,
 				D91CFD6BADD5D1B19F92DCAA /* libPods-QNote.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +185,9 @@
 		4539521812420E190AE98632 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7AA577801D2E55B10007F822 /* CoreData.framework */,
+				7A6916F51D2B4AC500265FF1 /* CoreFoundation.framework */,
+				7A2A23171D2A47130092BFB9 /* CoreGraphics.framework */,
 				6C83ECE2705A2147CB772435 /* libPods-QNote.a */,
 			);
 			name = Frameworks;
@@ -154,6 +204,17 @@
 				7A83EAED1D07BF94002A4675 /* YHProgressCutDownView.m */,
 			);
 			path = ProgressV;
+			sourceTree = "<group>";
+		};
+		7A2A23161D2A46A50092BFB9 /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				7A14B2D71D2FA01800012E0B /* CoreGraphicsExampleVC.h */,
+				7A14B2D81D2FA01800012E0B /* CoreGraphicsExampleVC.m */,
+				7A14B2DA1D2FA19700012E0B /* GraphicsSimple.h */,
+				7A14B2DB1D2FA19700012E0B /* GraphicsSimple.m */,
+			);
+			path = CoreGraphics;
 			sourceTree = "<group>";
 		};
 		7A2BAE341D0004D700D0F967 = {
@@ -202,6 +263,12 @@
 		7A2BAE5A1D00059A00D0F967 /* vc */ = {
 			isa = PBXGroup;
 			children = (
+				7AA577821D2E57E50007F822 /* CoreData */,
+				7AC2946C1D2BA62200341ED6 /* RAC */,
+				7A6916F71D2B8D8F00265FF1 /* Control */,
+				7A6916F11D2B498100265FF1 /* CoreFoundation */,
+				7A2A23161D2A46A50092BFB9 /* CoreGraphics */,
+				7A3B6A7F1D2691AE0086897D /* YYKit_Model */,
 				7A6857B61D1B7EE600D855A1 /* Runtime */,
 				7A68578D1D1B6DD400D855A1 /* HTMLWebview */,
 				7AF3CA1B1D0903AD008DB045 /* Bezier */,
@@ -262,6 +329,15 @@
 				7A2DED1C1D01E14E003E4B07 /* MathFuntionViewController.m */,
 			);
 			path = MathFuntion;
+			sourceTree = "<group>";
+		};
+		7A3B6A7F1D2691AE0086897D /* YYKit_Model */ = {
+			isa = PBXGroup;
+			children = (
+				7A3B6A801D2691C90086897D /* YYKitModelVController.h */,
+				7A3B6A811D2691C90086897D /* YYKitModelVController.m */,
+			);
+			path = YYKit_Model;
 			sourceTree = "<group>";
 		};
 		7A3C0EAB1D025AA700BD9832 /* base */ = {
@@ -331,6 +407,24 @@
 			path = Runtime;
 			sourceTree = "<group>";
 		};
+		7A6916F11D2B498100265FF1 /* CoreFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				7A6916F21D2B499800265FF1 /* CoreFoundationExample.h */,
+				7A6916F31D2B499800265FF1 /* CoreFoundationExample.m */,
+			);
+			path = CoreFoundation;
+			sourceTree = "<group>";
+		};
+		7A6916F71D2B8D8F00265FF1 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				7A6916F81D2B8DA800265FF1 /* UIControlExample.h */,
+				7A6916F91D2B8DA800265FF1 /* UIControlExample.m */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
 		7A8683591D057282006F0ECD /* httpTool */ = {
 			isa = PBXGroup;
 			children = (
@@ -356,6 +450,35 @@
 				7A9DF4031D02BF18002B4BA4 /* ValueForKeyPathViewController.m */,
 			);
 			path = valueForKeyPath;
+			sourceTree = "<group>";
+		};
+		7AA577821D2E57E50007F822 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				7AA577831D2E57FA0007F822 /* CoreDataExampleVController.h */,
+				7AA577841D2E57FA0007F822 /* CoreDataExampleVController.m */,
+				7AA5778C1D2E59DA0007F822 /* CDObj.h */,
+				7AA5778D1D2E59DA0007F822 /* CDObj.m */,
+				7A14B2D41D2F517600012E0B /* CoreDataManaged.h */,
+				7A14B2D51D2F517600012E0B /* CoreDataManaged.m */,
+				7AA577861D2E592D0007F822 /* CoreDataModle.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		7AC2946C1D2BA62200341ED6 /* RAC */ = {
+			isa = PBXGroup;
+			children = (
+				7AC2946D1D2BA63C00341ED6 /* ReactiveCocoaExample.h */,
+				7AC2946E1D2BA63C00341ED6 /* ReactiveCocoaExample.m */,
+				7AA5777D1D2E37300007F822 /* ReactiveTwoViewController.h */,
+				7AA5777E1D2E37300007F822 /* ReactiveTwoViewController.m */,
+				7A6489451D2CABE6004D6501 /* SignInService.h */,
+				7A6489461D2CABE6004D6501 /* SignInService.m */,
+				7A6489481D2CEC3B004D6501 /* NSObject+Caculator.h */,
+				7A6489491D2CEC3B004D6501 /* NSObject+Caculator.m */,
+			);
+			path = RAC;
 			sourceTree = "<group>";
 		};
 		7AF3CA1B1D0903AD008DB045 /* Bezier */ = {
@@ -397,12 +520,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A2BAE541D0004D700D0F967 /* Build configuration list for PBXNativeTarget "QNote" */;
 			buildPhases = (
-				6C3875AB0F512DFDBA9C4A64 /* 📦 Check Pods Manifest.lock */,
+				6C3875AB0F512DFDBA9C4A64 /* [CP] Check Pods Manifest.lock */,
 				7A2BAE391D0004D700D0F967 /* Sources */,
 				7A2BAE3A1D0004D700D0F967 /* Frameworks */,
 				7A2BAE3B1D0004D700D0F967 /* Resources */,
-				F669070B051233E92F51C7C3 /* 📦 Embed Pods Frameworks */,
-				16DE7091C6E4CD8459F2EE00 /* 📦 Copy Pods Resources */,
+				F669070B051233E92F51C7C3 /* [CP] Embed Pods Frameworks */,
+				16DE7091C6E4CD8459F2EE00 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -461,14 +584,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		16DE7091C6E4CD8459F2EE00 /* 📦 Copy Pods Resources */ = {
+		16DE7091C6E4CD8459F2EE00 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,14 +599,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QNote/Pods-QNote-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6C3875AB0F512DFDBA9C4A64 /* 📦 Check Pods Manifest.lock */ = {
+		6C3875AB0F512DFDBA9C4A64 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,14 +614,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		F669070B051233E92F51C7C3 /* 📦 Embed Pods Frameworks */ = {
+		F669070B051233E92F51C7C3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,37 +636,50 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AA5778E1D2E59DA0007F822 /* CDObj.m in Sources */,
 				7A3C0EB61D02615B00BD9832 /* AFNTableViewCell.m in Sources */,
 				7A1566361D06F04E0011035F /* ProgressViewController.m in Sources */,
+				7A6489471D2CABE6004D6501 /* SignInService.m in Sources */,
 				7AF3CA1E1D0907EB008DB045 /* BezierViewController.m in Sources */,
 				7AF3CA211D09BD7B008DB045 /* BezierLineV.m in Sources */,
+				7A6916F41D2B499800265FF1 /* CoreFoundationExample.m in Sources */,
 				7A1AA8841D12E90100F6EB0F /* BeizerFrameAnimationV.m in Sources */,
 				7A2DED191D01B7EC003E4B07 /* PropertyKeyWordVController.m in Sources */,
 				7A1AA8811D12E39000F6EB0F /* BezierChatPopV.m in Sources */,
 				7A3C0EAE1D025AB900BD9832 /* BaseViewController.m in Sources */,
 				7A6857901D1B6DE300D855A1 /* HTMLWebViewController.m in Sources */,
 				7A2BAE451D0004D700D0F967 /* AppDelegate.m in Sources */,
+				7A64894A1D2CEC3B004D6501 /* NSObject+Caculator.m in Sources */,
 				7A9DF4001D0296F1002B4BA4 /* AFNUser.m in Sources */,
 				7A2DED1D1D01E14E003E4B07 /* MathFuntionViewController.m in Sources */,
 				7A86835C1D0579D3006F0ECD /* YHHttps.m in Sources */,
 				7A2BAE421D0004D700D0F967 /* main.m in Sources */,
 				7A3C0EB21D025FDD00BD9832 /* AFNetworkingViewController.m in Sources */,
+				7AA577881D2E592D0007F822 /* CoreDataModle.xcdatamodeld in Sources */,
+				7A14B2D61D2F517600012E0B /* CoreDataManaged.m in Sources */,
 				7A6857BC1D1B8F5200D855A1 /* RTObj.m in Sources */,
 				7A1AA87B1D12DB4000F6EB0F /* BezierArc.m in Sources */,
+				7A3B6A821D2691C90086897D /* YYKitModelVController.m in Sources */,
 				7A9DF3FD1D0296E7002B4BA4 /* AFNPost.m in Sources */,
+				7A14B2D91D2FA01800012E0B /* CoreGraphicsExampleVC.m in Sources */,
 				7A6857B91D1B7EF700D855A1 /* RunTimeViewController.m in Sources */,
 				7A83EAEE1D07BF94002A4675 /* YHProgressCutDownView.m in Sources */,
+				7A14B2DC1D2FA19700012E0B /* GraphicsSimple.m in Sources */,
 				7AA8CE291D00694000669047 /* SecureObj.m in Sources */,
 				7A18F3D81D20B7B600662DF8 /* RTObj1.m in Sources */,
 				7A2BAE621D000C2700D0F967 /* HomeTableViewCell.m in Sources */,
+				7AC2946F1D2BA63C00341ED6 /* ReactiveCocoaExample.m in Sources */,
 				7A2BAE661D00210E00D0F967 /* SecureCodingViewController.m in Sources */,
 				7A2BAE5E1D0005AD00D0F967 /* HomeViewController.m in Sources */,
+				7AA5777F1D2E37300007F822 /* ReactiveTwoViewController.m in Sources */,
 				7A9DF40A1D0450E5002B4BA4 /* AFNetworkingNoteVC.m in Sources */,
+				7AA577851D2E57FA0007F822 /* CoreDataExampleVController.m in Sources */,
 				7A1AA8751D12D08400F6EB0F /* BezierCurveV.m in Sources */,
 				7A9DF4071D041A54002B4BA4 /* AFAppDotNetAPIClient.m in Sources */,
 				7A1AA87E1D12DFC100F6EB0F /* BezierTriangle.m in Sources */,
 				7AF14CDC1D07AF0700FA3A13 /* YHProgressView.m in Sources */,
 				7A1AA8781D12D31500F6EB0F /* BezierRect.m in Sources */,
+				7A6916FA1D2B8DA800265FF1 /* UIControlExample.m in Sources */,
 				7A9DF4041D02BF18002B4BA4 /* ValueForKeyPathViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -657,6 +793,7 @@
 			baseConfigurationReference = 2D04A53866E2B73E5A439451 /* Pods-QNote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				INFOPLIST_FILE = QNote/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -670,6 +807,7 @@
 			baseConfigurationReference = 86E887FD80964491631D88C4 /* Pods-QNote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				INFOPLIST_FILE = QNote/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -700,6 +838,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7AA577861D2E592D0007F822 /* CoreDataModle.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7AA577871D2E592D0007F822 /* CoreDataModle.xcdatamodel */,
+			);
+			currentVersion = 7AA577871D2E592D0007F822 /* CoreDataModle.xcdatamodel */;
+			path = CoreDataModle.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7A2BAE351D0004D700D0F967 /* Project object */;
 }

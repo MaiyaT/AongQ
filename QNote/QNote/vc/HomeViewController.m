@@ -29,7 +29,19 @@
     // Do any additional setup after loading the view.
     
     self.dataList = [[NSMutableArray alloc] init];
-        
+    
+    [self.dataList addObject:@{@"title":@"CoreGraphics学习",@"subtitle":@"2016-7-5",@"vc":@"CoreGraphicsExampleVC"}];
+//    [self.dataList addObject:@{@"title":@"CoreData学习",@"subtitle":@"2016-7-8",@"vc":@"CoreDataExampleVController"}];
+    
+    [self.dataList addObject:@{@"title":@"ReactiveCocoaExample学习",@"subtitle":@"2016-7-5",@"vc":@"ReactiveCocoaExample"}];
+
+    
+    [self.dataList addObject:@{@"title":@"UIControl学习",@"subtitle":@"2016-7-5",@"vc":@"UIControlExample"}];
+    
+    [self.dataList addObject:@{@"title":@"CoreFoundation学习",@"subtitle":@"2016-7-5",@"vc":@"CoreFoundationExample"}];
+    
+    [self.dataList addObject:@{@"title":@"YYKit的NSObject+YYModel学习",@"subtitle":@"2016-7-1",@"vc":@"YYKitModelVController"}];
+    
     [self.dataList addObject:@{@"title":@"Runtime学习",@"subtitle":@"2016-6-23",@"vc":@"RunTimeViewController"}];
     
     [self.dataList addObject:@{@"title":@"HTML本地",@"subtitle":@"2016-6-23",@"vc":@"HTMLWebViewController"}];
