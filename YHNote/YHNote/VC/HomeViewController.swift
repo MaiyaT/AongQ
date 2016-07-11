@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class HomeViewController: BaseViewController,UITableViewDelegate,UITableViewDataSource {
     
     var tableview : UITableView!
     var list: NSArray!
@@ -26,11 +26,12 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         tableview.delegate = self
         tableview.dataSource = self
         tableview.registerClass(UITableViewCell.self, forCellReuseIdentifier: "homeTableViewCellIdentify")
+        self.view.addSubview(tableview)
         
 
         list = [
             ["title":"基础知识","vc":"SwiftBaseNoteViewController"]
-        ].copy()
+        ].copy() as! NSArray
     }
 
     
@@ -44,12 +45,11 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-//        let identifyCell : String = "homeTableViewCellIdentify";
         let cell = tableview.dequeueReusableCellWithIdentifier("homeTableViewCellIdentify", forIndexPath: indexPath) as UITableViewCell
      
         let dic = list[indexPath.row]
         
-        cell.textLabel?.text = dic["title"]
+        cell.textLabel?.text = dic["title"] as? String
         
         return cell
     }
@@ -57,13 +57,19 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        let dic = list[indexPath.row]! as NSDictionary
+        let dic = list[indexPath.row] as? NSDictionary
+        let vcStr = dic!["vc"] as? String
         
-        let vcClass = NSClassFromString(dic["vc"]? as String)
+        let appName = NSBundle.mainBundle().infoDictionary!["CFBundleExecutable"] as! String
         
-        let vc = vcClass() as UIViewController
+        let vcClass : AnyClass = NSClassFromString(appName + "." + vcStr!)!
+        
+        let vc = (vcClass as! UIViewController.Type).init()
+        
+        vc.title = dic!["title"] as? String
         
         self.navigationController?.pushViewController(vc, animated: true)
+        
         
     }
     
