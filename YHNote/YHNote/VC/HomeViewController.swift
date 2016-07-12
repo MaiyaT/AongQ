@@ -30,8 +30,11 @@ class HomeViewController: BaseViewController,UITableViewDelegate,UITableViewData
         
 
         list = [
-            ["title":"基础知识","vc":"SwiftBaseNoteViewController"]
+            ["title":"基础知识","vc":"SwiftBaseNoteViewController"],
+            ["title":"目录结构-沙盒机制","vc":"DirectoryStructureViewController"],
+            ["title":"数据持久化","vc":"DataPersistenceViewController"]
         ].copy() as! NSArray
+        
     }
 
     
@@ -47,9 +50,9 @@ class HomeViewController: BaseViewController,UITableViewDelegate,UITableViewData
         
         let cell = tableview.dequeueReusableCellWithIdentifier("homeTableViewCellIdentify", forIndexPath: indexPath) as UITableViewCell
      
-        let dic = list[indexPath.row]
+        let dic = list[indexPath.row] as? NSDictionary
         
-        cell.textLabel?.text = dic["title"] as? String
+        cell.textLabel?.text = dic!["title"] as? String
         
         return cell
     }

@@ -15,6 +15,9 @@
 		7A9468641D33713800414037 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9468631D33713800414037 /* HomeViewController.swift */; };
 		7A9468661D3373C500414037 /* RootNavcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9468651D3373C500414037 /* RootNavcViewController.swift */; };
 		7A9468691D3390BD00414037 /* SwiftBaseNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9468681D3390BD00414037 /* SwiftBaseNoteViewController.swift */; };
+		7AAC5C6D1D347F1D0062501E /* DirectoryStructureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC5C6C1D347F1D0062501E /* DirectoryStructureViewController.swift */; };
+		7AAC5C6F1D348FE10062501E /* DataPersistenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC5C6E1D348FE10062501E /* DataPersistenceViewController.swift */; };
+		7AAC5C721D3494180062501E /* CityPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7AAC5C711D3494180062501E /* CityPlist.plist */; };
 		7AB7E33E1D33D3F1004B532C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB7E33D1D33D3F1004B532C /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +32,9 @@
 		7A9468631D33713800414037 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7A9468651D3373C500414037 /* RootNavcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootNavcViewController.swift; sourceTree = "<group>"; };
 		7A9468681D3390BD00414037 /* SwiftBaseNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftBaseNoteViewController.swift; sourceTree = "<group>"; };
+		7AAC5C6C1D347F1D0062501E /* DirectoryStructureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectoryStructureViewController.swift; sourceTree = "<group>"; };
+		7AAC5C6E1D348FE10062501E /* DataPersistenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPersistenceViewController.swift; sourceTree = "<group>"; };
+		7AAC5C711D3494180062501E /* CityPlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CityPlist.plist; sourceTree = "<group>"; };
 		7AB7E33D1D33D3F1004B532C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +68,7 @@
 		7A94684C1D336EF900414037 /* YHNote */ = {
 			isa = PBXGroup;
 			children = (
+				7AAC5C701D3492CC0062501E /* Source */,
 				7A94684D1D336EF900414037 /* AppDelegate.swift */,
 				7A9468621D33712E00414037 /* VC */,
 				7A9468511D336EF900414037 /* Main.storyboard */,
@@ -80,8 +87,18 @@
 				7A9468631D33713800414037 /* HomeViewController.swift */,
 				7A9468651D3373C500414037 /* RootNavcViewController.swift */,
 				7A9468681D3390BD00414037 /* SwiftBaseNoteViewController.swift */,
+				7AAC5C6C1D347F1D0062501E /* DirectoryStructureViewController.swift */,
+				7AAC5C6E1D348FE10062501E /* DataPersistenceViewController.swift */,
 			);
 			path = VC;
+			sourceTree = "<group>";
+		};
+		7AAC5C701D3492CC0062501E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				7AAC5C711D3494180062501E /* CityPlist.plist */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +161,7 @@
 			files = (
 				7A94685B1D336EF900414037 /* LaunchScreen.storyboard in Resources */,
 				7A9468581D336EF900414037 /* Assets.xcassets in Resources */,
+				7AAC5C721D3494180062501E /* CityPlist.plist in Resources */,
 				7A9468531D336EF900414037 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,6 +176,8 @@
 				7A94684E1D336EF900414037 /* AppDelegate.swift in Sources */,
 				7A9468561D336EF900414037 /* YHNote.xcdatamodeld in Sources */,
 				7A9468661D3373C500414037 /* RootNavcViewController.swift in Sources */,
+				7AAC5C6D1D347F1D0062501E /* DirectoryStructureViewController.swift in Sources */,
+				7AAC5C6F1D348FE10062501E /* DataPersistenceViewController.swift in Sources */,
 				7A9468641D33713800414037 /* HomeViewController.swift in Sources */,
 				7A9468691D3390BD00414037 /* SwiftBaseNoteViewController.swift in Sources */,
 				7AB7E33E1D33D3F1004B532C /* BaseViewController.swift in Sources */,
