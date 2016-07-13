@@ -49,19 +49,19 @@ class DirectoryStructureViewController: BaseViewController {
         /**
          Documents：最常用的目录，iTunes同步该应用时会同步此文件夹中的内容，适合储存重要数据
          */
-        let documents = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)
+        let documents = (NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true) as NSArray).firstObject
         print("\n====\ndocuments\(documents)")
         
         /**
          Library/cache：iTunes不会同步次文件夹，适合存储体积大的 不需要备份的非重要的数据
          */
-        let cache = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.CachesDirectory, NSSearchPathDomainMask.UserDomainMask, true)
+        let cache = (NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.CachesDirectory, NSSearchPathDomainMask.UserDomainMask, true) as NSArray).firstObject
         print("\n====\nlibrary/cache\(cache)")
         
         /**
          Library/Preference：iTunes同步该应用的时候会同步此文件夹中的内容，通常保存应用的设置信息
          */
-        let preference = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.PreferencePanesDirectory, NSSearchPathDomainMask.UserDomainMask, true)
+        let preference = (NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.PreferencePanesDirectory, NSSearchPathDomainMask.UserDomainMask, true) as NSArray).firstObject
         print("\n====\nlibrary/preference\(preference)")
         
         /**
