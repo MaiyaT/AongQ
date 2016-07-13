@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A244B7B1D35C9410009F4A2 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A244B7A1D35C9410009F4A2 /* libsqlite3.tbd */; };
+		7A244B811D35C9BC0009F4A2 /* DBUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A244B801D35C9BC0009F4A2 /* DBUnit.swift */; };
+		7A244B831D35CAFD0009F4A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A244B821D35CAFD0009F4A2 /* UIKit.framework */; };
+		7A244B851D35CB010009F4A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A244B841D35CB010009F4A2 /* Foundation.framework */; };
+		7A244B881D35E3220009F4A2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A244B871D35E3220009F4A2 /* CoreData.framework */; };
+		7A244B961D35EBAC0009F4A2 /* PersonCD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A244B941D35EBAC0009F4A2 /* PersonCD+CoreDataProperties.swift */; };
+		7A244B971D35EBAC0009F4A2 /* PersonCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A244B951D35EBAC0009F4A2 /* PersonCD.swift */; };
+		7A244BA41D35F8140009F4A2 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A244BA21D35F8140009F4A2 /* User+CoreDataProperties.swift */; };
+		7A244BA51D35F8140009F4A2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A244BA31D35F8140009F4A2 /* User.swift */; };
 		7A94684E1D336EF900414037 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A94684D1D336EF900414037 /* AppDelegate.swift */; };
 		7A9468531D336EF900414037 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A9468511D336EF900414037 /* Main.storyboard */; };
 		7A9468561D336EF900414037 /* YHNote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7A9468541D336EF900414037 /* YHNote.xcdatamodeld */; };
@@ -22,13 +31,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A244B7A1D35C9410009F4A2 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		7A244B801D35C9BC0009F4A2 /* DBUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBUnit.swift; sourceTree = "<group>"; };
+		7A244B821D35CAFD0009F4A2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7A244B841D35CB010009F4A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7A244B861D35CCC20009F4A2 /* YHNote-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YHNote-Bridging-Header.h"; sourceTree = "<group>"; };
+		7A244B871D35E3220009F4A2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7A244B941D35EBAC0009F4A2 /* PersonCD+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PersonCD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7A244B951D35EBAC0009F4A2 /* PersonCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCD.swift; sourceTree = "<group>"; };
+		7A244BA21D35F8140009F4A2 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7A244BA31D35F8140009F4A2 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7A94684A1D336EF900414037 /* YHNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YHNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A94684D1D336EF900414037 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A9468521D336EF900414037 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7A9468551D336EF900414037 /* YHNote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YHNote.xcdatamodel; sourceTree = "<group>"; };
-		7A9468571D336EF900414037 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A9468571D336EF900414037 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		7A94685A1D336EF900414037 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7A94685C1D336EF900414037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A94685C1D336EF900414037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		7A9468631D33713800414037 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7A9468651D3373C500414037 /* RootNavcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootNavcViewController.swift; sourceTree = "<group>"; };
 		7A9468681D3390BD00414037 /* SwiftBaseNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftBaseNoteViewController.swift; sourceTree = "<group>"; };
@@ -43,15 +62,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A244B881D35E3220009F4A2 /* CoreData.framework in Frameworks */,
+				7A244B851D35CB010009F4A2 /* Foundation.framework in Frameworks */,
+				7A244B831D35CAFD0009F4A2 /* UIKit.framework in Frameworks */,
+				7A244B7B1D35C9410009F4A2 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A244B771D35C91E0009F4A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A244B871D35E3220009F4A2 /* CoreData.framework */,
+				7A244B841D35CB010009F4A2 /* Foundation.framework */,
+				7A244B821D35CAFD0009F4A2 /* UIKit.framework */,
+				7A244B7A1D35C9410009F4A2 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A244B7D1D35C98E0009F4A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7A244B931D35EB9A0009F4A2 /* CoreData */,
+				7A244B801D35C9BC0009F4A2 /* DBUnit.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7A244B931D35EB9A0009F4A2 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				7A244B941D35EBAC0009F4A2 /* PersonCD+CoreDataProperties.swift */,
+				7A244B951D35EBAC0009F4A2 /* PersonCD.swift */,
+				7A244BA21D35F8140009F4A2 /* User+CoreDataProperties.swift */,
+				7A244BA31D35F8140009F4A2 /* User.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		7A9468411D336EF900414037 = {
 			isa = PBXGroup;
 			children = (
+				7A244B771D35C91E0009F4A2 /* Frameworks */,
 				7A94684C1D336EF900414037 /* YHNote */,
 				7A94684B1D336EF900414037 /* Products */,
 			);
@@ -68,14 +123,10 @@
 		7A94684C1D336EF900414037 /* YHNote */ = {
 			isa = PBXGroup;
 			children = (
+				7A244B7D1D35C98E0009F4A2 /* Model */,
 				7AAC5C701D3492CC0062501E /* Source */,
 				7A94684D1D336EF900414037 /* AppDelegate.swift */,
 				7A9468621D33712E00414037 /* VC */,
-				7A9468511D336EF900414037 /* Main.storyboard */,
-				7A9468571D336EF900414037 /* Assets.xcassets */,
-				7A9468591D336EF900414037 /* LaunchScreen.storyboard */,
-				7A94685C1D336EF900414037 /* Info.plist */,
-				7A9468541D336EF900414037 /* YHNote.xcdatamodeld */,
 			);
 			path = YHNote;
 			sourceTree = "<group>";
@@ -96,7 +147,13 @@
 		7AAC5C701D3492CC0062501E /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				7A9468511D336EF900414037 /* Main.storyboard */,
+				7A9468571D336EF900414037 /* Assets.xcassets */,
+				7A9468591D336EF900414037 /* LaunchScreen.storyboard */,
+				7A94685C1D336EF900414037 /* Info.plist */,
+				7A9468541D336EF900414037 /* YHNote.xcdatamodeld */,
 				7AAC5C711D3494180062501E /* CityPlist.plist */,
+				7A244B861D35CCC20009F4A2 /* YHNote-Bridging-Header.h */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -177,8 +234,13 @@
 				7A9468561D336EF900414037 /* YHNote.xcdatamodeld in Sources */,
 				7A9468661D3373C500414037 /* RootNavcViewController.swift in Sources */,
 				7AAC5C6D1D347F1D0062501E /* DirectoryStructureViewController.swift in Sources */,
+				7A244B811D35C9BC0009F4A2 /* DBUnit.swift in Sources */,
+				7A244B961D35EBAC0009F4A2 /* PersonCD+CoreDataProperties.swift in Sources */,
+				7A244BA51D35F8140009F4A2 /* User.swift in Sources */,
 				7AAC5C6F1D348FE10062501E /* DataPersistenceViewController.swift in Sources */,
 				7A9468641D33713800414037 /* HomeViewController.swift in Sources */,
+				7A244B971D35EBAC0009F4A2 /* PersonCD.swift in Sources */,
+				7A244BA41D35F8140009F4A2 /* User+CoreDataProperties.swift in Sources */,
 				7A9468691D3390BD00414037 /* SwiftBaseNoteViewController.swift in Sources */,
 				7AB7E33E1D33D3F1004B532C /* BaseViewController.swift in Sources */,
 			);
@@ -193,6 +255,7 @@
 				7A9468521D336EF900414037 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		7A9468591D336EF900414037 /* LaunchScreen.storyboard */ = {
@@ -201,6 +264,7 @@
 				7A94685A1D336EF900414037 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -300,6 +364,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alone.YHNote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/linningning/Documents/000/Q_Note/YHNote/YHNote/Source/YHNote-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -312,6 +377,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alone.YHNote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/linningning/Documents/000/Q_Note/YHNote/YHNote/Source/YHNote-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -345,7 +411,8 @@
 				7A9468551D336EF900414037 /* YHNote.xcdatamodel */,
 			);
 			currentVersion = 7A9468551D336EF900414037 /* YHNote.xcdatamodel */;
-			path = YHNote.xcdatamodeld;
+			name = YHNote.xcdatamodeld;
+			path = ../YHNote.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

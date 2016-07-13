@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class DataPersistenceViewController: BaseViewController {
 
@@ -38,8 +39,83 @@ class DataPersistenceViewController: BaseViewController {
         //testPreferenceWithPath(documentStr)
         
         //testKeyedArchiver(documentStr)
+        
+        //testSQLite3(documentStr)
+        
+        testCoreData(documentStr)
     }
 
+    
+    func testCoreData(documentStr : NSString){
+        
+         /// 参考 ： http://www.jianshu.com/p/53ad6737dcc8
+        
+        let delegate : AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        let managedContext : NSManagedObjectContext = delegate.managedObjectContext
+        
+        //增##############
+        let p1 : NSManagedObject = NSEntityDescription.insertNewObjectForEntityForName("PersonCD", inManagedObjectContext: managedContext)
+        
+        p1.setValue("Aong", forKey: "name")
+        p1.setValue(100086, forKey: "age")
+        p1.setValue(UIImage.init(named: "ticket"), forKey: "icon")
+        
+        do{
+            try managedContext.save()
+            print("保存成功...")
+        }
+        catch{
+            
+        }
+
+        
+        
+        //查###############
+        let fetchRequest : NSFetchRequest = NSFetchRequest()
+        fetchRequest.fetchLimit = 10    //限定查询结果的数量
+        fetchRequest.fetchOffset = 0    //查询的偏移量
+        
+        //声明一个实体结构
+        let entity : NSEntityDescription? = NSEntityDescription.entityForName("PersonCD", inManagedObjectContext: managedContext)
+        
+        //设置数据请求的实体结构
+        fetchRequest.entity = entity
+        
+        //设置查询条件
+        let predicate = NSPredicate(format: "id = '1'", "")
+        fetchRequest.predicate = predicate
+        
+        do{
+            let fetchedObjects:[AnyObject]? = try managedContext.executeFetchRequest(fetchRequest)
+            ...
+            //遍历查询结果
+            for item:PersonCD in fetchedObjects as! [PersonCD] {
+                print("\(item.name),\(item.age)")
+            }
+        }
+        catch
+        {
+            
+        }
+        
+        
+//        //删
+//        let fetchReq = NSFetchRequest(entityName: "PersonCD")
+//        do{
+//            let fetchResult = try managedContext.executeRequest(fetchReq)
+//            for re in fetchResult {
+//                
+//            }
+//        }
+//        catch{
+//            
+//        }
+        
+    }
+
+    
+    
     func testSQLite3(document:NSString){
         
         print("############### SQLite3 ###############")
@@ -57,7 +133,29 @@ class DataPersistenceViewController: BaseViewController {
          
          SQLite是无类型的，即不不管你在建表时指定的类型是什么什么，存储依然可以存储任的数据。而且在建表的时候可以不指定字段类型。SQLite之所以什么类型都可以是为了良好的编程规范和方便开发人员交流，所以平时使用的时候最好设置正确的字段类型，主键要设置成integer
          
+         在iOS中使用SQLite3，需要添加库文件：libsqlite3.dylib并导入主头文件，这是一个C的语言库,
+         在工程的目录下 建立 Frameworks文件夹，会自动归类到里面去
+         
+         引入sqlite3的library，头文件引入，需要在projectName-Bridging-Header.h中添加 #import "sqlite3.h"
+         
          */
+        
+        let db : DBUnit = DBUnit()
+        
+        db.openDataBase()
+        
+        db.insertData()
+        
+        let list = db.readData()
+        
+        print("sqlite list = \(list)")
+        
+        
+        /**
+         
+         SQLite3 都是c语言的函数，理解使用起来比较麻烦，一般使用第三方开源库 FMDB，以OC的方式封装了SQlite的C语言API
+         */
+        
     }
     
     func testKeyedArchiver(documentStr:NSString){
