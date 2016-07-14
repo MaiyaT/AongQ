@@ -59,6 +59,11 @@ class GCDExampleViewController: BaseViewController {
         for i:Int in 0...10 {
             print("Semaphore quque 2:\(i)")
         }
+        
+        dispatch_async(dispatch_get_main_queue()) { 
+            
+        }
+        
     }
     
 }
