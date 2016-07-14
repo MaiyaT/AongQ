@@ -32,7 +32,8 @@ class HomeViewController: BaseViewController,UITableViewDelegate,UITableViewData
         list = [
             ["title":"基础知识","vc":"SwiftBaseNoteViewController"],
             ["title":"目录结构-沙盒机制","vc":"DirectoryStructureViewController"],
-            ["title":"数据持久化","vc":"DataPersistenceViewController"]
+            ["title":"数据持久化","vc":"DataPersistenceViewController"],
+            ["title":"GCD","vc":"GCDExampleViewController"]
         ].copy() as! NSArray
         
     }
