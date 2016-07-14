@@ -56,10 +56,15 @@ class DataPersistenceViewController: BaseViewController {
         
         //增##############
         let p1 : NSManagedObject = NSEntityDescription.insertNewObjectForEntityForName("PersonCD", inManagedObjectContext: managedContext)
-        
-        p1.setValue("Aong", forKey: "name")
-        p1.setValue(100086, forKey: "age")
+        p1.setValue("Lucy", forKey: "name")
+        p1.setValue(32, forKey: "age")
         p1.setValue(UIImage.init(named: "ticket"), forKey: "icon")
+        
+        
+        let p2 : NSManagedObject = NSEntityDescription.insertNewObjectForEntityForName("PersonCD", inManagedObjectContext: managedContext)
+        p2.setValue("Lili", forKey: "name")
+        p2.setValue(86, forKey: "age")
+        p2.setValue(UIImage.init(named: "ticket"), forKey: "icon")
         
         do{
             try managedContext.save()
@@ -70,48 +75,71 @@ class DataPersistenceViewController: BaseViewController {
         }
 
         
+        //改#################
+        let fetchEditRequest = NSFetchRequest(entityName: "PersonCD")
+        fetchEditRequest.fetchLimit = 10
+        fetchEditRequest.fetchOffset = 0
         
-        //查###############
-        let fetchRequest : NSFetchRequest = NSFetchRequest()
-        fetchRequest.fetchLimit = 10    //限定查询结果的数量
-        fetchRequest.fetchOffset = 0    //查询的偏移量
-        
-        //声明一个实体结构
-        let entity : NSEntityDescription? = NSEntityDescription.entityForName("PersonCD", inManagedObjectContext: managedContext)
-        
-        //设置数据请求的实体结构
-        fetchRequest.entity = entity
-        
-        //设置查询条件
-        let predicate = NSPredicate(format: "id = '1'", "")
-        fetchRequest.predicate = predicate
+        fetchEditRequest.predicate = NSPredicate(format: "age = '86' And name = 'Lili'", "")
         
         do{
-            let fetchedObjects:[AnyObject]? = try managedContext.executeFetchRequest(fetchRequest)
-            ...
+            let fetchedObjects:[AnyObject]? = try managedContext.executeFetchRequest(fetchEditRequest)
+            
+            for item:PersonCD in fetchedObjects as! [PersonCD] {
+                
+                item.age = 103
+                
+                try managedContext.save()
+                print("改_____\(item.name),\(item.age)")
+            }
+        }
+        catch{
+            fatalError("不能修改:\\\(error)")
+        }
+        
+        
+        
+        
+        //删##################
+        let fetchDeleteRequest = NSFetchRequest(entityName: "PersonCD")
+       
+        do{
+            let fetchResult:[AnyObject]? = try managedContext.executeFetchRequest(fetchDeleteRequest)
+            for re:PersonCD in fetchResult as! [PersonCD] {
+                
+                if re.name == "Lucy"{
+                    managedContext.deleteObject((re as? NSManagedObject)!)
+                }
+            }
+        }
+        catch{
+            
+        }
+        
+        
+        
+        
+        //查###############
+        let fetchQueryRequest : NSFetchRequest = NSFetchRequest(entityName: "PersonCD")
+        fetchQueryRequest.fetchLimit = 10    //限定查询结果的数量
+        fetchQueryRequest.fetchOffset = 0    //查询的偏移量
+        
+        //设置查询条件
+//        let predicate = NSPredicate(format: "name = 'Lili'", "")
+//        fetchQueryRequest.predicate = predicate
+        
+        do{
+            let fetchedObjects:[AnyObject]? = try managedContext.executeFetchRequest(fetchQueryRequest)
+            
             //遍历查询结果
             for item:PersonCD in fetchedObjects as! [PersonCD] {
-                print("\(item.name),\(item.age)")
+                print("查_____\(item.name),\(item.age)")
             }
         }
         catch
         {
             
         }
-        
-        
-//        //删
-//        let fetchReq = NSFetchRequest(entityName: "PersonCD")
-//        do{
-//            let fetchResult = try managedContext.executeRequest(fetchReq)
-//            for re in fetchResult {
-//                
-//            }
-//        }
-//        catch{
-//            
-//        }
-        
     }
 
     
