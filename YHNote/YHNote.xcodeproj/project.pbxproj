@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7A095DD01D373F63000913AC /* GCDExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A095DCF1D373F63000913AC /* GCDExampleViewController.swift */; };
+		7A14307F1D38B53D00C98DBD /* SectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A14307E1D38B53D00C98DBD /* SectureViewController.swift */; };
 		7A244B7B1D35C9410009F4A2 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A244B7A1D35C9410009F4A2 /* libsqlite3.tbd */; };
 		7A244B811D35C9BC0009F4A2 /* DBUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A244B801D35C9BC0009F4A2 /* DBUnit.swift */; };
 		7A244B831D35CAFD0009F4A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A244B821D35CAFD0009F4A2 /* UIKit.framework */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		7A095DCF1D373F63000913AC /* GCDExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDExampleViewController.swift; sourceTree = "<group>"; };
+		7A14307E1D38B53D00C98DBD /* SectureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectureViewController.swift; sourceTree = "<group>"; };
 		7A244B7A1D35C9410009F4A2 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		7A244B801D35C9BC0009F4A2 /* DBUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBUnit.swift; sourceTree = "<group>"; };
 		7A244B821D35CAFD0009F4A2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -143,6 +145,7 @@
 				7AAC5C6C1D347F1D0062501E /* DirectoryStructureViewController.swift */,
 				7AAC5C6E1D348FE10062501E /* DataPersistenceViewController.swift */,
 				7A095DCF1D373F63000913AC /* GCDExampleViewController.swift */,
+				7A14307E1D38B53D00C98DBD /* SectureViewController.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				7A095DD01D373F63000913AC /* GCDExampleViewController.swift in Sources */,
 				7A9468661D3373C500414037 /* RootNavcViewController.swift in Sources */,
 				7AAC5C6D1D347F1D0062501E /* DirectoryStructureViewController.swift in Sources */,
+				7A14307F1D38B53D00C98DBD /* SectureViewController.swift in Sources */,
 				7A244B811D35C9BC0009F4A2 /* DBUnit.swift in Sources */,
 				7A244B961D35EBAC0009F4A2 /* PersonCD+CoreDataProperties.swift in Sources */,
 				7A244BA51D35F8140009F4A2 /* User.swift in Sources */,
