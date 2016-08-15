@@ -34,7 +34,8 @@ class HomeViewController: BaseViewController,UITableViewDelegate,UITableViewData
             ["title":"目录结构-沙盒机制","vc":"DirectoryStructureViewController"],
             ["title":"数据持久化","vc":"DataPersistenceViewController"],
             ["title":"GCD","vc":"GCDExampleViewController"],
-            ["title":"Encryption加密","vc":"SectureViewController"]
+            ["title":"Encryption加密","vc":"SectureViewController"],
+            ["title":"RunLoop学习","vc":"RunLoopViewController"]
         ].copy() as! NSArray
         
     }
