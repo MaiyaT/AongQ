@@ -36,6 +36,7 @@ class HomeViewController: BaseViewController,UITableViewDelegate,UITableViewData
             ["title":"GCD","vc":"GCDExampleViewController"],
             ["title":"Encryption加密","vc":"SectureViewController"],
             ["title":"Popping动画","vc":"PoppingAnimationViewCtrl"]
+            ["title":"RunLoop学习","vc":"RunLoopViewController"]
         ].copy() as! NSArray
         
     }
