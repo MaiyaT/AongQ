@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A053E031D46526000249F70 /* PoppingAnimationViewCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A053E021D46526000249F70 /* PoppingAnimationViewCtrl.swift */; };
 		7A095DD01D373F63000913AC /* GCDExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A095DCF1D373F63000913AC /* GCDExampleViewController.swift */; };
 		7A14307F1D38B53D00C98DBD /* SectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A14307E1D38B53D00C98DBD /* SectureViewController.swift */; };
 		7A244B7B1D35C9410009F4A2 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A244B7A1D35C9410009F4A2 /* libsqlite3.tbd */; };
@@ -30,9 +31,12 @@
 		7AAC5C6F1D348FE10062501E /* DataPersistenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAC5C6E1D348FE10062501E /* DataPersistenceViewController.swift */; };
 		7AAC5C721D3494180062501E /* CityPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7AAC5C711D3494180062501E /* CityPlist.plist */; };
 		7AB7E33E1D33D3F1004B532C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB7E33D1D33D3F1004B532C /* BaseViewController.swift */; };
+		FE67060087482FF4A3D48D64 /* libPods-YHNote.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D655EE7419483F6CC881FE4E /* libPods-YHNote.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		031BEBCC8C2F42160C5E6D3E /* Pods-YHNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHNote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YHNote/Pods-YHNote.debug.xcconfig"; sourceTree = "<group>"; };
+		7A053E021D46526000249F70 /* PoppingAnimationViewCtrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoppingAnimationViewCtrl.swift; sourceTree = "<group>"; };
 		7A095DCF1D373F63000913AC /* GCDExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDExampleViewController.swift; sourceTree = "<group>"; };
 		7A14307E1D38B53D00C98DBD /* SectureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectureViewController.swift; sourceTree = "<group>"; };
 		7A244B7A1D35C9410009F4A2 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -59,6 +63,8 @@
 		7AAC5C6E1D348FE10062501E /* DataPersistenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPersistenceViewController.swift; sourceTree = "<group>"; };
 		7AAC5C711D3494180062501E /* CityPlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CityPlist.plist; sourceTree = "<group>"; };
 		7AB7E33D1D33D3F1004B532C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		C0EFAC22B0EB5E6F8A875FAD /* Pods-YHNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHNote.release.xcconfig"; path = "Pods/Target Support Files/Pods-YHNote/Pods-YHNote.release.xcconfig"; sourceTree = "<group>"; };
+		D655EE7419483F6CC881FE4E /* libPods-YHNote.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YHNote.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,12 +76,22 @@
 				7A244B851D35CB010009F4A2 /* Foundation.framework in Frameworks */,
 				7A244B831D35CAFD0009F4A2 /* UIKit.framework in Frameworks */,
 				7A244B7B1D35C9410009F4A2 /* libsqlite3.tbd in Frameworks */,
+				FE67060087482FF4A3D48D64 /* libPods-YHNote.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4516E0979D7D7440C95893AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				031BEBCC8C2F42160C5E6D3E /* Pods-YHNote.debug.xcconfig */,
+				C0EFAC22B0EB5E6F8A875FAD /* Pods-YHNote.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7A244B771D35C91E0009F4A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +99,7 @@
 				7A244B841D35CB010009F4A2 /* Foundation.framework */,
 				7A244B821D35CAFD0009F4A2 /* UIKit.framework */,
 				7A244B7A1D35C9410009F4A2 /* libsqlite3.tbd */,
+				D655EE7419483F6CC881FE4E /* libPods-YHNote.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -113,6 +130,7 @@
 				7A244B771D35C91E0009F4A2 /* Frameworks */,
 				7A94684C1D336EF900414037 /* YHNote */,
 				7A94684B1D336EF900414037 /* Products */,
+				4516E0979D7D7440C95893AF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,6 +164,7 @@
 				7AAC5C6E1D348FE10062501E /* DataPersistenceViewController.swift */,
 				7A095DCF1D373F63000913AC /* GCDExampleViewController.swift */,
 				7A14307E1D38B53D00C98DBD /* SectureViewController.swift */,
+				7A053E021D46526000249F70 /* PoppingAnimationViewCtrl.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -171,9 +190,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A94685F1D336EF900414037 /* Build configuration list for PBXNativeTarget "YHNote" */;
 			buildPhases = (
+				09B5890BDEF77518573CD7CC /* 📦 Check Pods Manifest.lock */,
 				7A9468461D336EF900414037 /* Sources */,
 				7A9468471D336EF900414037 /* Frameworks */,
 				7A9468481D336EF900414037 /* Resources */,
+				84F921231BF953C77A9B4B62 /* 📦 Embed Pods Frameworks */,
+				7708DF0F17271BF51D82E57C /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,6 +253,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09B5890BDEF77518573CD7CC /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7708DF0F17271BF51D82E57C /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YHNote/Pods-YHNote-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84F921231BF953C77A9B4B62 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YHNote/Pods-YHNote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7A9468461D336EF900414037 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -242,6 +312,7 @@
 				7A9468661D3373C500414037 /* RootNavcViewController.swift in Sources */,
 				7AAC5C6D1D347F1D0062501E /* DirectoryStructureViewController.swift in Sources */,
 				7A14307F1D38B53D00C98DBD /* SectureViewController.swift in Sources */,
+				7A053E031D46526000249F70 /* PoppingAnimationViewCtrl.swift in Sources */,
 				7A244B811D35C9BC0009F4A2 /* DBUnit.swift in Sources */,
 				7A244B961D35EBAC0009F4A2 /* PersonCD+CoreDataProperties.swift in Sources */,
 				7A244BA51D35F8140009F4A2 /* User.swift in Sources */,
@@ -365,6 +436,7 @@
 		};
 		7A9468601D336EF900414037 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 031BEBCC8C2F42160C5E6D3E /* Pods-YHNote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YHNote/Info.plist;
@@ -378,6 +450,7 @@
 		};
 		7A9468611D336EF900414037 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0EFAC22B0EB5E6F8A875FAD /* Pods-YHNote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YHNote/Info.plist;

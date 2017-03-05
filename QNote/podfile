@@ -11,6 +11,9 @@ pod 'MJRefresh'
 pod 'SVProgressHUD'
 pod 'JSPatch'
 pod 'YYKit'
+#pod 'ReactiveObjC'
 pod 'ReactiveCocoa'
+pod 'YYKit'
+pod 'SDWebImage'
 
 end

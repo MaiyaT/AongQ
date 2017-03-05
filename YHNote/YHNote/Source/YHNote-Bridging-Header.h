@@ -10,5 +10,8 @@
 #define YHNote_Bridging_Header_h
 
 #import "sqlite3.h"
+#import <FMDB.h>
+#import <POP.h>
+#import <Masonry.h>
 
 #endif /* YHNote_Bridging_Header_h */

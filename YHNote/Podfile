@@ -1,0 +1,30 @@
+source 'https://github.com/CocoaPods/Specs.git'
+#source 'https://git.oschina.net/lnn/Spec.git'
+
+platform :ios, '7.0'
+inhibit_all_warnings!
+
+target 'YHNote' do
+
+pod 'FMDB'
+pod 'SDWebImage'
+#pod 'MMDrawerController'
+#pod 'UITableView+FDTemplateLayoutCell'
+#pod 'HMSegmentedControl'
+#pod 'UMengAnalytics'
+#pod 'SVProgressHUD'
+#pod 'UIViewController+KeyboardAnimation'
+pod 'pop'
+pod 'Masonry'
+
+#pod 'AFNetworking'
+#pod 'UMengAnalytics'
+#pod 'SCLAlertView-Objective-C'
+#pod 'AHKActionSheet'
+#pod 'MJRefresh'
+#pod 'IAPHelper'
+#pod 'TCBlobDownload'
+
+#pod 'YHBase'
+
+end

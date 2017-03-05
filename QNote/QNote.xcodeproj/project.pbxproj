@@ -58,6 +58,7 @@
 		7AA8CE291D00694000669047 /* SecureObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA8CE281D00694000669047 /* SecureObj.m */; };
 		7AC2946F1D2BA63C00341ED6 /* ReactiveCocoaExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC2946E1D2BA63C00341ED6 /* ReactiveCocoaExample.m */; };
 		7AF14CDC1D07AF0700FA3A13 /* YHProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF14CDB1D07AF0700FA3A13 /* YHProgressView.m */; };
+		7AF283421E6BA2E1001D5B34 /* ImageWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF283411E6BA2E1001D5B34 /* ImageWebViewController.m */; };
 		7AF3CA1E1D0907EB008DB045 /* BezierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF3CA1D1D0907EB008DB045 /* BezierViewController.m */; };
 		7AF3CA211D09BD7B008DB045 /* BezierLineV.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF3CA201D09BD7B008DB045 /* BezierLineV.m */; };
 		D91CFD6BADD5D1B19F92DCAA /* libPods-QNote.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C83ECE2705A2147CB772435 /* libPods-QNote.a */; };
@@ -160,6 +161,8 @@
 		7AC2946E1D2BA63C00341ED6 /* ReactiveCocoaExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactiveCocoaExample.m; sourceTree = "<group>"; };
 		7AF14CDA1D07AF0700FA3A13 /* YHProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHProgressView.h; sourceTree = "<group>"; };
 		7AF14CDB1D07AF0700FA3A13 /* YHProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHProgressView.m; sourceTree = "<group>"; };
+		7AF283401E6BA2E1001D5B34 /* ImageWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageWebViewController.h; sourceTree = "<group>"; };
+		7AF283411E6BA2E1001D5B34 /* ImageWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageWebViewController.m; sourceTree = "<group>"; };
 		7AF3CA1C1D0907EB008DB045 /* BezierViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierViewController.h; sourceTree = "<group>"; };
 		7AF3CA1D1D0907EB008DB045 /* BezierViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierViewController.m; sourceTree = "<group>"; };
 		7AF3CA1F1D09BD7B008DB045 /* BezierLineV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierLineV.h; sourceTree = "<group>"; };
@@ -263,6 +266,7 @@
 		7A2BAE5A1D00059A00D0F967 /* vc */ = {
 			isa = PBXGroup;
 			children = (
+				7AF2833F1E6BA2AE001D5B34 /* SD&YYImageV */,
 				7AA577821D2E57E50007F822 /* CoreData */,
 				7AC2946C1D2BA62200341ED6 /* RAC */,
 				7A6916F71D2B8D8F00265FF1 /* Control */,
@@ -481,6 +485,15 @@
 			path = RAC;
 			sourceTree = "<group>";
 		};
+		7AF2833F1E6BA2AE001D5B34 /* SD&YYImageV */ = {
+			isa = PBXGroup;
+			children = (
+				7AF283401E6BA2E1001D5B34 /* ImageWebViewController.h */,
+				7AF283411E6BA2E1001D5B34 /* ImageWebViewController.m */,
+			);
+			name = "SD&YYImageV";
+			sourceTree = "<group>";
+		};
 		7AF3CA1B1D0903AD008DB045 /* Bezier */ = {
 			isa = PBXGroup;
 			children = (
@@ -520,12 +533,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A2BAE541D0004D700D0F967 /* Build configuration list for PBXNativeTarget "QNote" */;
 			buildPhases = (
+				9C2BA490859DA037C0D9E109 /* 📦 Check Pods Manifest.lock */,
 				6C3875AB0F512DFDBA9C4A64 /* [CP] Check Pods Manifest.lock */,
 				7A2BAE391D0004D700D0F967 /* Sources */,
 				7A2BAE3A1D0004D700D0F967 /* Frameworks */,
 				7A2BAE3B1D0004D700D0F967 /* Resources */,
 				F669070B051233E92F51C7C3 /* [CP] Embed Pods Frameworks */,
 				16DE7091C6E4CD8459F2EE00 /* [CP] Copy Pods Resources */,
+				74EADC714B957B5EB145AA62 /* 📦 Embed Pods Frameworks */,
+				E31F0B656D26C0CEA2A0151D /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -614,6 +630,51 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		74EADC714B957B5EB145AA62 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QNote/Pods-QNote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C2BA490859DA037C0D9E109 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E31F0B656D26C0CEA2A0151D /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QNote/Pods-QNote-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F669070B051233E92F51C7C3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -679,6 +740,7 @@
 				7A1AA87E1D12DFC100F6EB0F /* BezierTriangle.m in Sources */,
 				7AF14CDC1D07AF0700FA3A13 /* YHProgressView.m in Sources */,
 				7A1AA8781D12D31500F6EB0F /* BezierRect.m in Sources */,
+				7AF283421E6BA2E1001D5B34 /* ImageWebViewController.m in Sources */,
 				7A6916FA1D2B8DA800265FF1 /* UIControlExample.m in Sources */,
 				7A9DF4041D02BF18002B4BA4 /* ValueForKeyPathViewController.m in Sources */,
 			);
